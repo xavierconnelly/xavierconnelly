@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Xavier Connelly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen">
+    <script src="/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+<style>
+*{
+  color: rgb(73, 29, 6);
+font-family: 'Slabo 27px', serif;
+}
+
+.nav{
+ position: fixed;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+#name{
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+#projects{
+  height: 100%;
+  width: 40px;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: pointer;
+}
+
+
+
+#about{
+  height: 100%;
+  width: 40px;
+  left: 0;
+  top: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.bio{
+  padding: 10px;
+  position: fixed;
+  color: rgb(73, 29, 6);
+  width: 25%;
+  height: calc(100vh - 100px);
+  overflow: none;
+  top: 40px;
+  left: 40px;
+  font-size: 20px;
+  opacity: 0;
+  -webkit-transition:opacity  1s linear;
+  transition:opacity 1s linear;
+}
+
+#about:hover ~ .bio{
+  opacity: 1;
+  -webkit-transition:opacity  1s linear;
+  transition:opacity 1s linear;
+}
+
+p, h3{ 
+color: }
+
+#about:hover ~ .work{
+  width: calc(70vw - 100px);
+  -webkit-transition:width  .5s linear;
+  transition:width .5s linear;
+}
+
+#contact{
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+}
+
+.contact-hidden{
+  visibile: none;
+  display: inline-block;
+  display: none;
+}
+
+#contact:hover #contact-center{
+  display: none;
+}
+
+#contact:hover .contact-hidden{
+  display: inline;
+}
+
+.rabbit{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.rabbit:hover{
+  text-decoration: underline;
+}
+
+
+.work {
+    position: fixed;
+    z-index: 1;
+    right: 40px;
+    top: 40px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    background-color: white;
+    overflow-Y: scroll;
+    overflow: ; /* delete*/
+    border:10px solid rgb(73, 29, 6);
+    -webkit-transition:width  .5s linear;
+    transition:width .5s linear;
+}
+
+#learn-more{
+  font-size: 1.2em;
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  width: 30%;
+  padding: 30px;
+  float: left;
+  border-left: 1px solid;
+  display: none;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-500px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-500px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close{
+  position: fixed;
+  right: 100px;
+  top: 80px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.close:hover{
+ cursor: pointer;
+}
+
+
+h4{
+  border-bottom: 1px solid;
+  margin-bottom: -10px;
+}
+
+#work-inner{
+  margin: 30px;
+  width: ;
+  float: left;
+}
+
+.quote{
+  width: 45%;
+  font-size: 40px;
+  float: left;
+  padding: 20px;
+}
+
+.next{
+  position: relative;
+  margin-bottom:  100px;
+  font-size: 100px;
+}
+
+
+/* width */
+.work::-webkit-scrollbar {
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Track */
+.work::-webkit-scrollbar-track {
+  background: ;
+    cursor: pointer;
+}
+
+/* Handle */
+.work::-webkit-scrollbar-thumb {
+  background-color:  rgb(73, 29, 6);
+  cursor: pointer;
+
+}
+
+/* Handle on hover */
+.work::-webkit-scrollbar-thumb:hover {
+  border: 0px solid;
+  background-color: white; 
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border: 0px solid;
+  text-align: left;
+}
+
+.wrapper > * > * {
+  width: 100%;
+}
+
+body {
+  padding: 2em; 
+}
+
+.titles{
+  background: ;
+  order: 1;
+  border: none;
+}
+
+.title{
+  font-size: 4em; 
+}
+
+.sub-title{
+  font-size: 1em;
+  font-style: italic;
+}
+
+.description{
+  font-size: 1.5em;
+  font-weight: normal;
+  background: ;
+  order: 2;
+  border: none;
+  margin-right: 150px;
+}
+
+.hero {
+  order: 3;
+}
+
+.wrapper > .hero > * {
+  width: 80%;
+  padding: 10%;
+  background: rgb(208, 202, 180);
+}
+
+.aside{
+  font-size: 1.5em;
+  height: auto;
+  background: ;
+  font-weight: normal;
+}
+
+.aside-1, .aside-2, .aside-3, .aside-4{
+  order: 3;
+}
+
+.main{
+  order: 4;
+  background: ;
+}
+
+.aside-5, .aside-6, .aside-7, .aside-8{
+  order: 5;
+}
+
+.aside > a {
+  margin-top: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.footer {
+ background:;
+ order: 6;
+ border: 2px solid;
+ text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  .aside, .titles, .description { flex: 40%; }
+}
+
+@media all and (min-width: 800px) {
+}
+
+#project-container{
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.pro-no{
+  display: none;
+}
+
+.pro-show{
+  display: block;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artboard {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 1px solid;
+  margin: 0px;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 100px);
+}
+
+.item {
+  border: 1px solid;
+  text-align: center;
+  display: flex;
+}
+
+.item > h3 {
+  margin: auto;
+}
+
+.item1 {
+  grid-column: 1/6;
+  grid-row: 1/6;
+}
+.item2 {
+  grid-column: 6/12;
+  grid-row: 1 / 6;
+}
+.item3 {
+  grid-column: 1/6;
+  grid-row: 6 / 12;
+}
+.item4 {
+  grid-column: 6/9;
+  grid-row: 6 / 9;
+}
+.item5 {
+  grid-column: 6/9;
+  grid-row: 9 / 11;
+}
+.item6 {
+  grid-column: 9/11;
+  grid-row: 6/9;
+}
+
+.item7 {
+  grid-column: 9/11;
+  grid-row: 9/11;
+}
+
+
+@media all and (max-width: 800px) {
+  .artboard {display: flex;}
+}
+</style>
+
+</head>
+<body>
+
+  <div id="name" class="nav">
+    Xavier Connelly
+  </div>
+  <div id="projects" class="nav" onclick="goose()">
+    Projects
+  </div>
+  
+  <div id="about" class="nav">
+    about
+  </div>
+  <div class="bio">
+    <h3> Xavier Connelly is a designer focused on creating supportive technology to enhance peoples lives.</h3>
+    <p>His practice is underpinned by thorough research to inform the decisions made, ensuring the right problems are being solved for. </p>
+    <p>Recently he has begun teaching himself front end code in an attempt to better understand the world of engineers. </p>
+    <p>Before crossing over to the digital world he founded and ran the internationally renowned printing business Dawn Press for close to a decade.</p>
+  </div>
+  <div id="contact" class="nav">
+    <span class="contact-hidden"> ciao@xavierconnelly.com ~ 0408 556 937</span>
+    <span id="contact-center">
+  contact
+  </span>
+  </div>
+  <div class="work">
+    <div id="work-inner">
+
+      
+     <div class="wrapper">
+  <aside class="titles">
+    <div class="title">
+      Title
+    </div>
+    <div class="sub-title">
+      Sub-title
+    </div>
+  </aside>
+  <aside class="description">
+     Window installation for one of the world's largest providers of non-governmental funding for scientific research.
+  </aside>
+  <header class="hero">
+    
+        <video autoplay muted loop id="myVideo">
+      <source src="https://jamesandjimmy.com/xavier/J&J_compressed.mp4" type="video/mp4">
+    </header>
+  <article class="main">
+   <img src="https://66.media.tumblr.com/856736227c514ef435957aec9ebfabeb/tumblr_nhsjbpqKBl1roox20o1_1280.jpg">
+  </article>
+  <aside class="aside aside-1"><video src="http://www.cocoandmaximilian.com/wp-content/uploads/2016/09/cm028_loop.mp4"</video></aside>
+  <aside class="aside aside-2">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally. <br><br>
+    <span class="rabbit" onclick="rabbit();">Learn More</span>
+  </aside>
+  <aside class="aside aside-3"><img src="https://66.media.tumblr.com/cc198e6789c06d98d1ce0b7b9d63d8e4/tumblr_n07b7xTDqM1roox20o1_1280.jpg"></aside>
+  <aside class="aside aside-4"><img src="https://66.media.tumblr.com/cc198e6789c06d98d1ce0b7b9d63d8e4/tumblr_n07b7xTDqM1roox20o1_1280.jpg"></aside>
+  <aside class="aside aside-5">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.<br><br>
+       <span class="rabbit" onclick="rabbit();">Learn More</span>
+</aside>
+  <aside class="aside aside-6"><video src="http://www.cocoandmaximilian.com/wp-content/uploads/2016/09/cm028_loop.mp4"</video></aside>
+  <aside class="aside aside-7"><img src="https://66.media.tumblr.com/74e2a1ba214a71cac28fedbe836865d9/tumblr_npyuk5wGDl1roox20o1_1280.jpg"></aside>
+  <aside class="aside aside-8"><img src="https://66.media.tumblr.com/74e2a1ba214a71cac28fedbe836865d9/tumblr_npyuk5wGDl1roox20o1_1280.jpg"></aside>
+    
+<a href="https://codepen.io/XavierConnelly/full/oOLomO" class="footer">
+    <footer>Next Project </footer></a>
+</div>
+  </div>
+    <div id="learn-more">
+            
+      <span class="close" onclick="duck();">CLOSE</span>
+<h4>CONTEXT</h4>
+            <p>
+Self-checkout kiosks have become common-place in Australian supermarkets over the past few years. </p>
+<p>
+  The overall experience, however, remains difficult for customers young and old.</p>
+<h4>CHALLENGE</h4>
+            <p>
+              Redesign the self checkout experience with particular attention to the interface design. </p>
+<h4>OUTCOME</h4>
+<p>An updated loyalty program capable of providing a faster, more personalised experience for returning customers.
+</p>
+<h4>PROCESS</h4>
+            <p>
+To understand how the current system and interface were performing the team conducted interviews at local supermarkets. </p>
+
+Transferring customer insights onto an affinity map, we then worked independently for the remainder of the project. Weighing and searching for non-barcoded items begun to stand out as the primary pain point for customers.</p>
+
+I decided to analyse the interface and map the IA hoping to make sense of the content structure and uncover why customers were having such difficulty.</p>
+
+With up to 24 items being displayed users were being overwhelmed and continuously scanning content as they transitioned between screens.
+ </p>           
+<h4>DESIGN</h4>
+            <p>
+To counteract this issue I housed the items within a scrolling keyboard, reducing the number of items shown and hierarchical groups to enable users to remain present.</p>
+
+Central to the design was a personalised screen for loyalty customers.</p> 
+
+Items from previous shops would be stored together, significantly reducing clutter to increase both user flow and brand loyalty.
+</p>
+<h4>NEXT STEPS</h4>
+            <p>
+Looking at the wider service showed potential to house touch points within baskets and trolleys, bringing the interaction forward to when a customer enters a store. </p>
+
+This would ease a bottleneck of user flow during payment while allowing the opportunity for the store to target customers with personalised sales.</p>
+        </div>
+    <div id="project-container" class="pro-no">
+    <section id="container">
+  <div class="artboard">
+    <div class="item item1">
+       <h3>James And Jimmy</h3>
+    </div>
+    <div class="item item2">
+       <h3>PADA Studios </h3>
+    </div>
+    <div class="item item3">
+      <h3> Dawn Press </h3>
+    </div>
+    <div class="item item4">
+      <h3>Tom Alber</h3>
+    </div>
+    <div class="item item5">
+      <h3> Woolworths Kiosk </h3>
+    </div>
+    <div class="item item6">
+       <h3>Apple iOS </h3>
+    </div>
+    <div class="item item7">
+       <h3>Science Gallery </h3>
+    </div>
+  </div>
+</section>
+</div>
+ </div>
+  <body>
+  </html>
