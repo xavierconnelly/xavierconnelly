@@ -1,63 +1,144 @@
-* {
-  font-family: arial, sans-serif;
-  font-size: 30px;
-}
-a{
-  color: red;
+*{
+  color: rgb(73, 29, 6);
+font-family: 'Slabo 27px', serif;
 }
 
-body{
-  background: rgb(229, 227, 222);
+.nav{
+ position: fixed;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: 5;
 }
 
-#header {
-  border-bottom: 2px solid black;
-  color: black;
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
+#name{
   width: 100%;
 }
 
-#title {
-  float: right;
-  margin-right: 5px;
+
+#projects{
+  height: 100%;
+  width: 40px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
-.photo {
-  height: 40vh;
-  width: 30vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background: blue;
+
+#about{
+  height: 100%;
+  width: 40px;
+  left: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 
-.photo:hover {
-  opacity: 0;
-}
-
-.text {
-  display: inline-block;
+.bio{
   padding: 10px;
-  width: 40%;
-  height: 80vh;
-  margin-top: 30vh;
+  position: fixed;
+  color: rgb(73, 29, 6);
+  width: 25%;
+  height: calc(100vh - 100px);
+  overflow: none;
+  top: 40px;
+  left: 40px;
+  font-size: 20px;
 }
 
-.marquee {
-  width: auto;
-  overflow: hidden;
-  border-top: 2px solid black;
-  background: rgb(229, 227, 222);
-  );
+#about:hover ~ .myslider{
+  width: calc(70vw - 100px);
+  -webkit-transition:width  .5s linear;
+  transition:width .5s linear;
 }
-#footer {
-  position: fixed;
-  left: 0;
+
+#contact{
   bottom: 0;
+  height: 40px;
   width: 100%;
-  z-index: 3;
-  background: white;
+}
+
+.contact-hidden{
+  visibile: none;
+  display: inline-block;
+  display: none;
+}
+
+#contact:hover #contact-center{
+  display: none;
+}
+
+#contact:hover .contact-hidden{
+  display: inline;
+}
+
+
+
+.myslider {
+    position: fixed;
+    z-index: 1;
+    right: 40px;
+    top: 40px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    background-color: orange;
+    overflow: hidden;
+    border:10px solid rgb(73, 29, 6);
+    -webkit-transition:width  .5s linear;
+  transition:width .5s linear;
+}
+
+.myslider .item {
+  height: 50%;
+  width: 100%;
+  float: right;
+  display: block;
+  margin: 0 auto;
+  background-color:  ;
+  overflow: hidden;  
+}
+
+.myslider .text {
+  font-size: 30px;
+  margin: 10px;
+  margin-top: 100px;
+  width: 40%;
+  float: left;
+  padding: 0 auto;
+  background-color:  ;
+  overflow: hidden;  
+}
+
+.header{
+  font-size: 100px;
+}
+
+.sub-header{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.description{
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.call-to-action{
+  text-transform: uppercase;
+  outline: 1px solid;
+  margin-top: 30px;
+}
+
+.myslider .item img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.hidden{
+  height: 100%;
+  overflow: hidden;
 }
