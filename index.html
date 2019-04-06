@@ -1,46 +1,101 @@
 <!DOCTYPE html>
-
-
 <head>
     <meta charset="utf-8">
     <title>Xavier Connelly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen">
     <script src="/js/main.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js"></script>
   </head>
-  
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
 <body>
-  <div id="header">
-    Xavier Connelly
-    <span id="title">
-  Designer
-      </span>
+
+  <div id="name" class="nav"> Xavier Connelly </div>
+  <div id="projects" class="nav"> Projects </div>
+  <div id="about" class="nav"> about </div>
+    <div class="bio">
+      <h3> Xavier Connelly is a designer focused on creating supportive technology to enhance peoples lives.</h3>
+      <p>His practice is underpinned by thorough research to inform the decisions made, ensuring the right problems are being solved for. </p>
+      <p>Recently he has begun teaching himself front end code in an attempt to better understand the world of engineers. </p>
+      <p>Before crossing over to the digital world he founded and ran the award winning printing business Dawn Press for nearly a decade.</p>
+    </div>
+  <div id="contact" class="nav">
+    <span class="contact-hidden"> ciao@xavierconnelly.com ~ 0408 556 937</span>
+    <span id="contact-center"> contact </span>   
   </div>
 
-<div class="photo">
-  </div>
-  <div class="text">
-    <p>
-      I’m a multi-disciplinary designer currently working in the fields of<i> interaction, service, print and web design.</i>
-      <br>
-      <br>
-      Occasionaly I <a>publish books</a>, and code websites (like this one.)
-       <br><br>
-      I sometimes write about what I think over at <a>Medium</a>
-      <br><br>
-        TL:DR     <br>
-      I am driven to enhance peoples lives using a human centered approach to acheive this.
-        <br><br>  
+  <div class="myslider owl-carousel owl-theme">
+      
+    <div class="item">
+      <div class="text">
+        <div class="header">James And Jimmy</div>
+        <div class="sub-header"> Web Design, Web Development, Brand Identity</div>
+        <div class="description">Playfully refined website form the identity for budding architect and academic.</div>
+        <div class="call-to-action"> View Project </div>
+      </div>
+      <img src="https://d33wubrfki0l68.cloudfront.net/de5408702cd2759b5f76535b9c5a31c6d9eaba4f/00dff/img/jc_hfo_3_small.jpg">
+    </div>
 
-Before crossing over to the tech world I founded and ran the internationally recognised and award winning print business Dawn Press for nearly a decade. 
-    </p>
+    <div class="item">
+      <div class="text">
+        <div class="header">PADA Studios</div>
+        <div class="sub-header"> Web Design, Web Development, Brand Identity</div>
+        <div class="description">Playfully refined website form the identity for budding architect and academic.</div>
+        <div class="call-to-action"> View Project </div>
+      </div>
+      <div class="hidden">
+      <img src="https://static1.squarespace.com/static/5b0519262714e57af9b352fe/5c0711792b6a28af9b542e22/5c071179575d1f3fc21bda07/1553183593437/DSC_0054.JPG">
+     </div>
+         
+    <div class="item">
+      <div class="text">
+        <div class="header">James And Jimmy</div>
+        <div class="sub-header"> Web Design, Web Development, Brand Identity</div>
+        <div class="description">Playfully refined website form the identity for budding architect and academic.</div>
+        <div class="call-to-action"> View Project </div>
+      </div>
+      <img src="https://d3n32ilufxuvd1.cloudfront.net/5699789733200e9422fbb08d/995404/upload-77848501-43e7-11e8-aac9-e7c6f8c8e1ac.jpg">
+    </div>
+
+    <div class="item">
+      <div class="text">
+        <div class="header">Dawn Press</div>
+        <div class="sub-header"> Web Design, Web Development, Brand Identity</div>
+        <div class="description">Playfully refined website form the identity for budding architect and academic.</div>
+        <div class="call-to-action"> View Project </div>
+      </div>
+      <img src="https://www.hotel-hotel.com.au/wp-content/uploads/2017/05/xavier-connelly.jpg">
+    </div>
+
+    <div class="item">
+      <div class="text">
+        <div class="header">Tom Alber</div>
+        <div class="sub-header"> Web Design, Web Development, Brand Identity</div>
+        <div class="description">Playfully refined website form the identity for budding architect and academic.</div>
+        <div class="call-to-action"> View Project </div>
+      </div>
+      <img src="https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F694480483_1280x720.webp&amp;src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png">
+    </div>
+        
   </div>
+      
+  <script> 
+    $(document).ready(function(){
+  $('.myslider').owlCarousel({
+        items:1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        navText: ["next","prev"],
+        autoplayHoverPause: false,
+        dots: false,
+        dotsData: true,
+        center: true,
+        speed: 10,
+    });
+});
+  </script>
+      
 </body>
-
-<div id="footer">
-  <div class="marquee">☕ ☕ ☕ In Lisbon? <a> Let’s grab a coffee! </a> ☕ ☕ ☕ 🌐 🌐 🌐 Somewhere else? <a> Say hello </a>🌐
-🌐 🌐 </div>
-</div>
+</html>
