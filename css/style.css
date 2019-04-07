@@ -1,10 +1,16 @@
+/* Xavier Connelly Webiste --------------------------------------------------------- */
+
+/* Universal --------------------------------------------------------- */
+
 *{
   color: rgb(73, 29, 6);
-font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', serif;
 }
 
+/* Global Nav --------------------------------------------------------- */
+
 .nav{
- position: fixed;
+  position: fixed;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
@@ -19,16 +25,15 @@ font-family: 'Slabo 27px', serif;
   left 0;
 }
 
-
 #projects{
   height: 100%;
+  width: 40px;
   right: 0;
   top: 0;
-  width: 40px;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  cursor: pointer;
 }
-
 
 #about{
   height: 100%;
@@ -37,31 +42,40 @@ font-family: 'Slabo 27px', serif;
   top: 0;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  cursor: pointer;
+}
+
+#about:hover ~ .bio{
+  opacity: 1;
+  -webkit-transition:opacity  1s linear;
+  transition:opacity 1s linear;
 }
 
 .bio{
-  padding: 10px;
-  position: fixed;
-  color: rgb(73, 29, 6);
-  width: 25%;
   height: calc(100vh - 100px);
+  width: 25%;
+  padding: 10px;
   overflow: none;
+  position: fixed;
   top: 40px;
   left: 40px;
   font-size: 20px;
+  opacity: 0;
+  -webkit-transition:opacity  1s linear;
+  transition:opacity 1s linear;
 }
 
-#about:hover ~ .myslider{
+#about:hover ~ .work{
   width: calc(70vw - 100px);
   -webkit-transition:width  .5s linear;
   transition:width .5s linear;
 }
 
 #contact{
-  left: 0;
-  bottom: 0;
   height: 40px;
   width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 .contact-hidden{
@@ -78,23 +92,32 @@ font-family: 'Slabo 27px', serif;
   display: inline;
 }
 
+/* Universal --------------------------------------------------------- */
 
+.rabbit{
+  cursor: pointer;
+  text-decoration: underline;
+}
 
-.myslider {
-    position: fixed;
-    z-index: 1;
-    right: 40px;
-    top: 40px;
-    width: calc(100vw - 100px);
-    height: calc(100vh - 100px);
-    background-color: orange;
-    overflow: hidden;
-    border:10px solid rgb(73, 29, 6);
-    -webkit-transition:width  .5s linear;
+.rabbit:hover{
+  text-decoration: underline;
+}
+
+.work{
+  height: calc(100vh - 100px);
+  width: calc(100vw - 100px);
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: orange;
+  border:10px solid rgb(73, 29, 6);
+  -webkit-transition:width  .5s linear;
   transition:width .5s linear;
 }
 
-.myslider .item {
+.work .item {
   height: 50%;
   width: 100%;
   float: right;
@@ -104,7 +127,7 @@ font-family: 'Slabo 27px', serif;
   overflow: hidden;  
 }
 
-.myslider .text {
+.work .text {
   font-size: 30px;
   margin: 10px;
   margin-top: 100px;
@@ -135,7 +158,7 @@ font-family: 'Slabo 27px', serif;
   margin-top: 30px;
 }
 
-.myslider .item img {
+.work .item img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -147,4 +170,272 @@ font-family: 'Slabo 27px', serif;
 .hidden{
   height: 100%;
   overflow: hidden;
+}
+
+#work-inner{
+  margin: 30px;
+  width: ;
+  float: left;
+}
+
+.quote{
+  width: 45%;
+  font-size: 40px;
+  float: left;
+  padding: 20px;
+}
+
+.next{
+  position: relative;
+  margin-bottom:  100px;
+  font-size: 100px;
+}
+
+/* Project Section --------------------------------------------------------- */
+
+/* Scrollbar Width */
+.work::-webkit-scrollbar {
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Scrollbar Track */
+.work::-webkit-scrollbar-track {
+  background: ;
+  cursor: pointer;
+}
+
+/* Scrollbar Handle */
+.work::-webkit-scrollbar-thumb {
+  background-color:  rgb(73, 29, 6);
+  cursor: pointer;
+}
+
+/* Scrollbar Handle on hover */
+.work::-webkit-scrollbar-thumb:hover {
+  border: 0px solid;
+  background-color: white; 
+  cursor: pointer;
+}
+
+/* Flex Behaviour --------------------------------------------------------- */
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border: 0px solid;
+  text-align: left;
+}
+
+.wrapper > * > * {
+  width: 100%;
+}
+
+body {
+  padding: 2em; 
+}
+
+.titles{
+  background: ;
+  order: 1;
+  border: none;
+}
+
+.title{
+  font-size: 4em; 
+}
+
+.sub-title{
+  font-size: 1em;
+  font-style: italic;
+}
+
+.description{
+  font-size: 1.5em;
+  font-weight: normal;
+  order: 2;
+  border: none;
+  margin-right: 150px;
+}
+
+.hero {
+  order: 3;
+}
+
+.wrapper > .hero > * {
+  width: 80%;
+  padding: 10%;
+  background: rgb(208, 202, 180);
+}
+
+.aside{
+  font-size: 1.5em;
+  height: auto;
+  background: ;
+  font-weight: normal;
+}
+
+.aside-1, .aside-2, .aside-3, .aside-4{
+  order: 3;
+}
+
+.main{
+  order: 4;
+  background: ;
+}
+
+.aside-5, .aside-6, .aside-7, .aside-8{
+  order: 5;
+}
+
+.aside > a {
+  margin-top: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.footer {
+ background:;
+ order: 6;
+ border: 2px solid;
+ text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  .aside, .titles, .description { flex: 40%; }
+}
+
+@media all and (min-width: 800px) {
+}
+
+/* Learn More Window --------------------------------------------------------- */
+
+#learn-more{
+  width: 30%;
+  display: none;
+  float: left;
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  margin: 0px;
+  font-size: 1.2em;
+  border-left: 1px solid;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-500px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-500px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close{
+  position: fixed;
+  right: 100px;
+  top: 80px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.close:hover{
+ cursor: pointer;
+}
+
+h4{
+  border-bottom: 1px solid;
+  margin-bottom: -10px;
+}
+
+/* Project Navigation Window*/
+#project-container{
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.pro-no{
+  display: none;
+}
+
+.pro-show{
+  display: block;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artboard {
+  display: grid;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 100px);
+  grid-gap: 0;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 1px solid;
+  margin: 0px;
+}
+
+.item {
+  border: 1px solid;
+  text-align: center;
+  display: flex;
+}
+
+.item > h3 {
+  margin: auto;
+}
+
+.item1 {
+  grid-column: 1/6;
+  grid-row: 1/6;
+}
+.item2 {
+  grid-column: 6/12;
+  grid-row: 1 / 6;
+}
+.item3 {
+  grid-column: 1/6;
+  grid-row: 6 / 12;
+}
+.item4 {
+  grid-column: 6/9;
+  grid-row: 6 / 9;
+}
+.item5 {
+  grid-column: 6/9;
+  grid-row: 9 / 11;
+}
+.item6 {
+  grid-column: 9/11;
+  grid-row: 6/9;
+}
+
+.item7 {
+  grid-column: 9/11;
+  grid-row: 9/11;
+}
+
+@media all and (max-width: 800px) {
+  .artboard {display: flex;}
 }
