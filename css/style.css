@@ -22,7 +22,7 @@
 #name{
   width: 100%;
   top: 0;
-  left 0;
+  left: 0;
 }
 
 #projects{
@@ -92,16 +92,7 @@
   display: inline;
 }
 
-/* Universal --------------------------------------------------------- */
-
-.rabbit{
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.rabbit:hover{
-  text-decoration: underline;
-}
+/* Main Window --------------------------------------------------------- */
 
 .work{
   height: calc(100vh - 100px);
@@ -109,7 +100,6 @@
   position: fixed;
   right: 40px;
   top: 40px;
-  overflow: hidden;
   z-index: 1;
   background-color: orange;
   border:10px solid rgb(73, 29, 6);
@@ -192,31 +182,6 @@
 }
 
 /* Project Section --------------------------------------------------------- */
-
-/* Scrollbar Width */
-.work::-webkit-scrollbar {
-  height: 20px;
-  cursor: pointer;
-}
-
-/* Scrollbar Track */
-.work::-webkit-scrollbar-track {
-  background: ;
-  cursor: pointer;
-}
-
-/* Scrollbar Handle */
-.work::-webkit-scrollbar-thumb {
-  background-color:  rgb(73, 29, 6);
-  cursor: pointer;
-}
-
-/* Scrollbar Handle on hover */
-.work::-webkit-scrollbar-thumb:hover {
-  border: 0px solid;
-  background-color: white; 
-  cursor: pointer;
-}
 
 /* Flex Behaviour --------------------------------------------------------- */
 
@@ -315,6 +280,45 @@ body {
 
 @media all and (min-width: 800px) {
 }
+
+/* Buttons --------------------------------------------------------- */
+
+.rabbit{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.rabbit:hover{
+  text-decoration: underline;
+}
+
+/* Scrollbar --------------------------------------------------------- */
+
+/* Scrollbar Width */
+.work::-webkit-scrollbar {
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Scrollbar Track */
+.work::-webkit-scrollbar-track {
+  background: ;
+  cursor: pointer;
+}
+
+/* Scrollbar Handle */
+.work::-webkit-scrollbar-thumb {
+  background-color:  rgb(73, 29, 6);
+  cursor: pointer;
+}
+
+/* Scrollbar Handle on hover */
+.work::-webkit-scrollbar-thumb:hover {
+  border: 0px solid;
+  background-color: white; 
+  cursor: pointer;
+}
+
 
 /* Learn More Window --------------------------------------------------------- */
 
