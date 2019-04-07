@@ -384,13 +384,13 @@ h4{
   display: block;
 }
 
-#container {
+#project-grid-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.artboard {
+.project-grid {
   display: grid;
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
@@ -401,13 +401,13 @@ h4{
   margin: 0px;
 }
 
-.item {
+.project-grid-item {
   border: 1px solid;
   text-align: center;
   display: flex;
 }
 
-.item > h3 {
+.project-grid-item > h3 {
   margin: auto;
 }
 
