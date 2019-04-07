@@ -1,4 +1,20 @@
-// When the user clicks on <span> (x), close the modal
+// Carousel Options
+$(document).ready(function(){
+  $('.work').owlCarousel({
+        items:1,
+        loop: true,
+        autoplay: true,
+        nav: true,
+        navText: ["next","prev"],
+        autoplayHoverPause: false,
+        dots: false,
+        dotsData: true,
+        center: true,
+        speed: 10,
+    });
+});
+
+// Learn More Button - Open
 function rabbit() {
       var title = document.querySelector("#learn-more");
       title.style.display = "block";
@@ -7,7 +23,7 @@ function rabbit() {
     }
 
 
-// When the user clicks on <span> (x), close the modal
+// Learn More Button - Close
 function duck() {
       var title = document.querySelector("#learn-more");
       title.style.display = "none";
@@ -15,7 +31,7 @@ function duck() {
       joe.style.width = "";
     }
 
-// When the user clicks on <span> (x), close the modal
+// Project Nav - Open
 function goose() {
       var something = document.querySelector("#project-container");
       something.style.display = "flex";
