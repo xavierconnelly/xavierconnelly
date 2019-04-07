@@ -1,6 +1,6 @@
 // Carousel Options
 $(document).ready(function(){
-  $('.work').owlCarousel({
+  $('.portal').owlCarousel({
         items:1,
         loop: true,
         autoplay: true,
