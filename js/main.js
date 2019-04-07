@@ -22,7 +22,6 @@ function rabbit() {
       joe.style.width = "calc(50% - 52.5px)";
     }
 
-
 // Learn More Button - Close
 function duck() {
       var title = document.querySelector("#learn-more");
