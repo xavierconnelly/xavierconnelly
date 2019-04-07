@@ -405,6 +405,7 @@ h4{
   border: 1px solid;
   text-align: center;
   display: flex;
+  text-decoration: none;
 }
 
 .project-grid-item > h3 {
@@ -442,5 +443,5 @@ h4{
 }
 
 @media all and (max-width: 800px) {
-  .artboard {display: flex;}
+  .project-grid {display: flex;}
 }
