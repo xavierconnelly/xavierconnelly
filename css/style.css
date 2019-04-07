@@ -93,11 +93,9 @@
   display: inline;
 }
 
-<div class="portal">
-
 /* Main Window --------------------------------------------------------- */
 
-.portal{
+.portal {
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
   position: fixed;
