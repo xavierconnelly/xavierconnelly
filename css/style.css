@@ -93,22 +93,30 @@
   display: inline;
 }
 
+<div class="portal">
+
 /* Main Window --------------------------------------------------------- */
 
-.work{
+.portal{
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
   position: fixed;
   right: 40px;
   top: 40px;
+  overflow: hidden;  
   z-index: 1;
-  background-color: orange;
   border:10px solid rgb(73, 29, 6);
   -webkit-transition:width  .5s linear;
   transition:width .5s linear;
 }
 
-.work .item {
+/* Carousel --------------------------------------------------------- */
+
+.scroll{
+  background-color: orange;
+}
+
+.scroll .item {
   height: 50%;
   width: 100%;
   float: right;
@@ -118,7 +126,7 @@
   overflow: hidden;  
 }
 
-.work .text {
+.scroll .text {
   font-size: 30px;
   margin: 10px;
   margin-top: 100px;
@@ -149,7 +157,7 @@
   margin-top: 30px;
 }
 
-.work .item img {
+.scroll .item img {
   position: absolute;
   top: 0;
   left: 50%;
