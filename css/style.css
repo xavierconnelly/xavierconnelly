@@ -113,12 +113,12 @@
 
 /* Carousel --------------------------------------------------------- */
 
-.scroll{
+.carousel{
   background-color: orange;
   overflow: hidden;
 }
 
-.scroll .item {
+.carousel .item {
   height: 50%;
   width: 100%;
   float: right;
@@ -128,7 +128,7 @@
   overflow: hidden;  
 }
 
-.scroll .text {
+.carousel .text {
   font-size: 30px;
   margin: 10px;
   margin-top: 100px;
@@ -159,7 +159,7 @@
   margin-top: 30px;
 }
 
-.scroll .item img {
+.carousel .item img {
   position: absolute;
   top: 0;
   left: 50%;
