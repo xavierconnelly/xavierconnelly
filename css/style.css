@@ -418,8 +418,7 @@ h4{
 }
 
 .project-grid-item:hover {
-  background: rgb(73, 29, 6);
-  color: white;
+  background: orange);
 }
 
 .project-grid-item > h3 {
