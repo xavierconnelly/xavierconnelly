@@ -417,6 +417,11 @@ h4{
   text-decoration: none;
 }
 
+.project-grid-item:hover {
+  background: rgb(73, 29, 6);
+  color: white;
+}
+
 .project-grid-item > h3 {
   margin: auto;
 }
