@@ -106,9 +106,7 @@
   right: 40px;
   top: 40px;
   z-index: 1;
-  overflow-y: scroll;
   border:10px solid rgb(73, 29, 6);
-  background: white;
   -webkit-transition:width  .5s linear;
   transition:width .5s linear;
 }
