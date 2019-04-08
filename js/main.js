@@ -1,16 +1,15 @@
 // Carousel Options
 $(document).ready(function(){
-  $('.portal').owlCarousel({
+  $('.carousel').owlCarousel({
         items:1,
         loop: true,
         autoplay: true,
-        nav: true,
-        navText: ["next","prev"],
+        nav: false,
         autoplayHoverPause: false,
         dots: false,
-        dotsData: true,
+        dotsData: false,
         center: true,
-        speed: 10,
+        smartSpeed: 900,
     });
 });
 
