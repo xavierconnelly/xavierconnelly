@@ -38,6 +38,6 @@ function goose() {
       bingo.style.display = "none";
      var trevor = document.querySelector("#learn-more");
       trevor.style.display = "none";
-       var trevor = document.querySelector(".work");
+       var trevor = document.querySelector(".portal");
       trevor.style.overflow = "hidden";
     }
