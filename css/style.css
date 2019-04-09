@@ -109,6 +109,7 @@
   border:10px solid rgb(73, 29, 6);
   -webkit-transition:width  .5s linear;
   transition:width .5s linear;
+  overflow-x: hidden;
 }
 
 /* Carousel --------------------------------------------------------- */
@@ -179,8 +180,15 @@
 
 #work-inner{
   margin: 30px;
-  float: left;
 }
+
+@media all and (max-width: 800px) {
+#work-inner{
+  margin: 0px;
+}
+}
+
+
 
 .wrapper {
   display: flex;  
