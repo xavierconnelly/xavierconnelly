@@ -5,6 +5,7 @@
 *{
   color: rgb(73, 29, 6);
   font-family: 'Slabo 27px', serif;
+  scroll-behavior: smooth;
 }
 
 /* Global Nav --------------------------------------------------------- */
@@ -100,8 +101,8 @@
 /* Main Window --------------------------------------------------------- */
 
 .portal {
-  height: calc(100vh - 100px);
-  width: calc(100vw - 100px);
+  height: calc(100% - 100px);
+  width: calc(100% - 100px);
   position: fixed;
   right: 40px;
   top: 40px;
