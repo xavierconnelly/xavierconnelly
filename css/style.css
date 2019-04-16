@@ -123,7 +123,6 @@
 .carousel .item {
   height: 100%;
   width: 100%;
-  float: right;
   display: block;
   margin: 0 auto;
   background-color:  ;
@@ -172,9 +171,9 @@
 }
 
 .image-box{
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: ;
+  top: ;
+  left: ;
   height: 100%;
   width: 100%;
   overflow: hidden;
