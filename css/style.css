@@ -174,7 +174,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: center center no-repeat;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
   background-size: cover;
   
   &:before {
