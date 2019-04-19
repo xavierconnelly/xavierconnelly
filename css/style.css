@@ -4,13 +4,10 @@
 
 *{
   scroll-behavior: smooth;
-  font-family: 'Slabo 27px', serif;
-  color: rgb(73, 29, 6);
 }
 
 *:not(.carousel){
-  font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: rgb(73, 29, 6);
 }
 
 body{
@@ -20,6 +17,7 @@ body{
 /* Global Nav --------------------------------------------------------- */
 
 .nav{
+  font-family: 'Open Sans', sans-serif;
   position: fixed;
   text-align: center;
   line-height: 40px;
@@ -67,7 +65,6 @@ body{
 }
 
 .bio{
-  color: rgb(73, 29, 6);
   height: calc(100vh - 100px);
   width: 25%;
   padding: 10px;
@@ -79,6 +76,11 @@ body{
   opacity: 0;
   -webkit-transition:opacity  1s linear;
   transition:opacity 1s linear;
+  font-family: 'Slabo 27px', serif;
+}
+
+.bio:first-child{
+  font-family: 'Open Sans', sans-serif;
 }
 
 #about:hover ~ .portal{
@@ -141,21 +143,20 @@ body{
 
 .carousel .text {
   font-family: 'Open Sans', sans-serif;
+  color: white;
   margin: 10px;
   width: 100%;
   float: left;
   padding: 0 auto;
-  background-color:  ;
-  overflow: visible; 
-  color: white;
   position: absolute;
-  bottom: 20%;
+  top: calc(100% - 150px);
   left: 0;
   z-index: 30;
 }
 
 .header{
-  font-size: 3em;
+  margin: 10px;
+  font-size: 1.5em;
   display: inline-block;
   float: left;
   width: 33.33%;
@@ -168,7 +169,8 @@ body{
   display: none;
 }
 
-.description{
+.overview{
+  margin: 10px;
   font-size: 1.5em;
   display: inline-block;
   float: left;
@@ -218,8 +220,6 @@ body{
 }
 }
 
-
-
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
@@ -233,6 +233,7 @@ body{
   flex: 1 100%;
   border: 0px solid;
   text-align: left;
+  font-family: 'Slabo 27px', serif;
 }
 
 .wrapper > * > * {
