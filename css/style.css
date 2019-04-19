@@ -23,6 +23,7 @@ body{
   line-height: 40px;
   font-size: 20px;
   letter-spacing: 3px;
+  font-weight: bold;
   text-transform: uppercase;
   z-index: 5;
 }
@@ -212,6 +213,7 @@ body{
 /* Flex Behaviour --------------------------------------------------------- */
 
 #work-inner{
+  background: rgba(245, 242, 230, 0.4);
   margin: 30px;
 }
 
@@ -222,7 +224,6 @@ body{
 }
 
 .wrapper {
-  background: rgba(245, 242, 230, 0.4);
   display: flex;  
   flex-flow: row wrap;
   font-weight: bold;
