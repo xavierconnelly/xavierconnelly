@@ -187,6 +187,10 @@
   opacity: 1;
 }
 
+.image-height{
+  height: 90vh;
+}
+
 .image {
   background-size: cover;
   background-position: center center;
