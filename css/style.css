@@ -4,10 +4,11 @@
 
 *{
   scroll-behavior: smooth;
+  color: rgb(73, 29, 6);
 }
 
 *:not(.carousel){
-  color: rgb(73, 29, 6);
+  color:white;
 }
 
 body{
@@ -79,7 +80,7 @@ body{
   font-family: 'Slabo 27px', serif;
 }
 
-.bio:first-child{
+.bio > h3{
   font-family: 'Open Sans', sans-serif;
 }
 
