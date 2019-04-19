@@ -431,7 +431,6 @@ h4{
 }
 
 #project-grid-container {
-  color: rgb(73, 29, 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,14 +448,20 @@ h4{
 }
 
 .project-grid-item {
-  border: 1px solid;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(73, 29, 6);
   text-align: center;
   display: flex;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(245, 242, 230);
 }
 
 .project-grid-item:hover {
-  background: orange;
+ background: rgb(245, 242, 230);
+   color:  rgb(73, 29, 6);
 }
 
 .project-grid-item > h3 {
