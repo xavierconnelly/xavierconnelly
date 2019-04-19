@@ -115,6 +115,7 @@ body{
 /* Main Window --------------------------------------------------------- */
 
 .portal {
+    background: rgba(245, 242, 230, 0.4);
   height: calc(100% - 100px);
   width: calc(100% - 100px);
   position: fixed;
@@ -213,7 +214,6 @@ body{
 /* Flex Behaviour --------------------------------------------------------- */
 
 #work-inner{
-  background: rgba(245, 242, 230, 0.4);
   margin: 30px;
 }
 
