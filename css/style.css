@@ -3,7 +3,6 @@
 /* Universal --------------------------------------------------------- */
 
 *{
-  color: rgb(73, 29, 6);
   font-family: 'Slabo 27px', serif;
   scroll-behavior: smooth;
 }
@@ -15,6 +14,7 @@ body{
 /* Global Nav --------------------------------------------------------- */
 
 .nav{
+  color: rgb(73, 29, 6);
   position: fixed;
   text-align: center;
   line-height: 40px;
@@ -62,6 +62,7 @@ body{
 }
 
 .bio{
+  color: rgb(73, 29, 6);
   height: calc(100vh - 100px);
   width: 25%;
   padding: 10px;
@@ -137,36 +138,44 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   margin: 10px;
-  margin-top: 100px;
-  width: 40%;
+  width: 100%;
   float: left;
   padding: 0 auto;
   background-color:  ;
   overflow: visible; 
   color: white;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 
 .header{
   font-size: 3em;
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  text-align: right;
 }
 
 .sub-header{
   font-size: 0.8em;
   font-style: italic;
+  display: none;
 }
 
 .description{
   font-size: 1.5em;
-  margin-top: 1em;
+  display: inline-block;
+  float: left;
+  width: 66.67%;
+  text-align: left;
 }
 
 .call-to-action{
   text-transform: uppercase;
   margin-top: 2em;
   font-decoration: none;
+  display: none;
 }
 
 .call-to-action:hover{
@@ -214,6 +223,7 @@ body{
 }
 
 .wrapper > * {
+  color: rgb(73, 29, 6);
   padding: 10px;
   margin: 10px;
   flex: 1 100%;
@@ -405,6 +415,7 @@ h4{
 }
 
 #project-grid-container {
+  color: rgb(73, 29, 6);
   display: flex;
   justify-content: center;
   align-items: center;
