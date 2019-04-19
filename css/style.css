@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background: rgb(245, 242, 230);
+}
+
 /* Global Nav --------------------------------------------------------- */
 
 .nav{
