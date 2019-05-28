@@ -215,6 +215,7 @@ body{
 
 #work-inner{
   margin: 30px;
+  float: left;
 }
 
 @media all and (max-width: 800px) {
