@@ -9,10 +9,6 @@
 *:not(.carousel){
 }
 
-body{
-  background: rgb(245, 242, 230);
-}
-
 .project, .words, .images{
   border: px solid blue;
 }
