@@ -1,17 +1,15 @@
 // Carousel Options
 $(document).ready(function(){
-  $('.carousel').slick({
-  slidesToShow: 1,
-  dots:true,
+  $('.duck').slick({
+  dots:false,
   centerMode: true,
-  dots: true,
   infinite: true,
-  speed: 500,
+  speed: 300,
   fade: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  autoplay: true,
   });
 });
-
 
 // OLD JS
 
