@@ -1,17 +1,19 @@
 // Carousel Options
 $(document).ready(function(){
-  $('.carousel').owlCarousel({
-        items:1,
-        loop: true,
-        autoplay: true,
-        nav: false,
-        autoplayHoverPause: false,
-        dots: false,
-        dotsData: false,
-        center: true,
-        smartSpeed: 900,
-    });
+  $('.carousel').slick({
+  slidesToShow: 1,
+  dots:true,
+  centerMode: true,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+  });
 });
+
+
+// OLD JS
 
 // Learn More Button - Open
 function rabbit() {
