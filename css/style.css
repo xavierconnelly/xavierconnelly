@@ -137,6 +137,6 @@ body{
 
 /* Slider Nav --------------------------------------------------------- */
 
-.slick-prev, .slick-next{
+.slick-prev, .slick-next, .slick-arrow{
   display: none;
 }
