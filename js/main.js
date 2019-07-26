@@ -26,12 +26,12 @@ $(document).ready(function(){
 
 
 // Opening About
-function aboutlink() {
+function openAbout() {
       document.getElementById("about").style.display = "block";
     }
 
-// Opening About
-function close() {
+// Closing About
+function closeAbout() {
       document.getElementById("about").style.display = "none";
     }
 
