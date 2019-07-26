@@ -25,6 +25,17 @@ $(document).ready(function(){
 });
 
 
+// Opening About
+function aboutlink() {
+      document.getElementById("about").style.display = "block";
+    }
+
+// Opening About
+function close() {
+      document.getElementById("about").style.display = "none";
+    }
+
+
 // OLD JS
 
 // Learn More Button - Open
