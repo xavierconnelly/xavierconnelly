@@ -101,6 +101,12 @@ body{
   min-height: 500px;
 }
 
+.carousel > div{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .left {
   margin-right: 10px;
 }
