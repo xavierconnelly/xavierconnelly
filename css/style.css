@@ -134,3 +134,9 @@ body{
 .four{
   color:  ;
 }
+
+/* Slider Nav --------------------------------------------------------- */
+
+.slick-prev, .slick-next{
+  display: none;
+}
