@@ -11,6 +11,20 @@ $(document).ready(function(){
   });
 });
 
+// Carousel Options
+$(document).ready(function(){
+  $('.goose').slick({
+  dots:false,
+  centerMode: true,
+  infinite: true,
+  speed: 300,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  });
+});
+
+
 // OLD JS
 
 // Learn More Button - Open
