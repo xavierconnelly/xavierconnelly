@@ -19,6 +19,7 @@
 a{
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 body{
@@ -67,6 +68,7 @@ body{
   position: fixed;
   bottom: 30px;
   color: red;
+  cursor: pointer;
 }
 
 /* Project Divs --------------------------------------------------------- */
