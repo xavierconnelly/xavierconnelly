@@ -1,4 +1,4 @@
-// Carousel Options
+// Carousel Options — Dawn
 $(document).ready(function(){
   $('.duck').slick({
   dots:false,
@@ -11,46 +11,20 @@ $(document).ready(function(){
   });
 });
 
-// Carousel Options
+// Carousel Options — Free
 $(document).ready(function(){
-  $('.goose').slick({
+  $('.wolf').slick({
   dots:false,
   centerMode: true,
   infinite: true,
   speed: 300,
   fade: true,
   cssEase: 'linear',
-  autoplay: true,
+  autoplay: false,
   });
 });
 
-// Carousel Options
-$(document).ready(function(){
-  $('.cow').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  });
-});
-
-// Carousel Options
-$(document).ready(function(){
-  $('.turtle').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  });
-});
-
-// Carousel Options
+// Carousel Options — Jimmy
 $(document).ready(function(){
   $('.sheep').slick({
   dots:false,
@@ -63,9 +37,22 @@ $(document).ready(function(){
   });
 });
 
-// Carousel Options
+// Carousel Options — Pada
 $(document).ready(function(){
-  $('.wolf').slick({
+  $('.goose').slick({
+  dots:false,
+  centerMode: true,
+  infinite: true,
+  speed: 300,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: false,
+  });
+});
+
+// Carousel Options — Apple
+$(document).ready(function(){
+  $('.cow').slick({
   dots:false,
   centerMode: true,
   infinite: true,
@@ -75,6 +62,21 @@ $(document).ready(function(){
   autoplay: true,
   });
 });
+
+// Carousel Options — Kiosk
+$(document).ready(function(){
+  $('.turtle').slick({
+  dots:false,
+  centerMode: true,
+  infinite: true,
+  speed: 300,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: false,
+  });
+});
+
+
 
 
 // Opening About
