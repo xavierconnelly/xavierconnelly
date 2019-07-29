@@ -16,19 +16,23 @@
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
-  color: inherit;
+  color: blue;
   cursor: pointer;
 }
 
-body{
+body {
   font-family: 'IBM Plex Mono', monospace;
+}
+
+video {
+  width: 100%;
 }
 
 /* Nav Bar --------------------------------------------------------- */
 
-#nav{
+#nav {
   height: 45px;
   width: 100%;
   text-align: center;
@@ -42,16 +46,20 @@ body{
   z-index: 9999;
 }
 
-#home{
+#nav a {
+  color: inherit;
+}
+
+#home {
    
 }
 
-#aboutlink{
+#aboutlink {
   float: right;
   padding-right: 20px;
 }
 
-#about{
+#about {
   display: none;
   width: 50vw;
   height: 100%;
@@ -64,11 +72,11 @@ body{
   background: white;
 }
 
-#bio{
+#bio {
   width: 80%;
 }
 
-#contact{
+#contact {
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -76,7 +84,7 @@ body{
   color: blue;
 }
 
-#close{
+#close {
   position: fixed;
   bottom: 30px;
   color: red;
@@ -85,13 +93,13 @@ body{
 
 /* Project Divs --------------------------------------------------------- */
 
-.project{
+.project {
   margin: 50px;
   padding: 10px;
   height: 500px;
 }
 
-.words{
+.words {
   float: left;
   width: 40%;
   padding: 10px;
@@ -99,34 +107,34 @@ body{
   font-size: 14px;
 }
 
-.words > p{
+.words > p {
   width: 50%;
   margin-bottom: 14px;
 }
 
-.title{
+.title {
   
 }
 
-.info{
+.info {
   float: right;
   margin-left: 50%;
   color: grey;
 }
 
-.desc{
+.desc {
   
 }
 
-.learn{
+.learn {
   color: red;
 }
 
-.learn:hover{
+.learn:hover {
   font-style: italic;
 }
 
-.images{
+.images {
   float: left;
   width: calc(60% - 10px);
   padding: 0px;
@@ -137,12 +145,12 @@ body{
   background-repeat: no-repeat;
 }
 
-.images > img{
+.images > img {
   min-width: 100%;
   min-height: 500px;
 }
 
-.carousel > div{
+.carousel > div {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -152,20 +160,20 @@ body{
   margin-right: 10px;
 }
 
-.one{
+.one {
   margin-top: 90px;
   color: ;
 }
 
-.two{
+.two {
   color:  ;
 }
 
-.three{
+.three {
   color:  ;
 }
 
-.four{
+.four {
   color:  ;
 }
 
