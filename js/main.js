@@ -7,9 +7,9 @@ $(document).ready(function(){
   speed: 300,
   fade: true,
   cssEase: 'linear',
-  autoplay: true,
+  autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
@@ -54,7 +54,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
@@ -69,7 +69,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
@@ -84,7 +84,7 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: false,
   prevArrow: false,
-  nextArrow: false
+  nextArrow: false,
   });
 });
 
