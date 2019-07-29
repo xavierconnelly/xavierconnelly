@@ -1,183 +1,172 @@
-<!DOCTYPE html>
-<head>
-    
-    <title>Xavier Connelly</title>
-    
-    <meta charset="utf-8">
-    <meta name="google-site-verification" content="d1TEEvgs_BPRVWJH0I51xK2g-mTbjjCp4FfyS29Jkls" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+/* To Delete --------------------------------------------------------- */
 
-    <meta name="description" content="Xavier Connelly is a designer focused on enhancing people's lives through technology and other means">
-    <meta name="keywords" content="xavier, connelly, melbourne, designer, ux, ui, service, design, graphic, web, developer, technology, hcd">
-    <meta name="author" content="Xavier Connelly">
+.project, .words, .images{
+  border: px solid blue;
+}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/slick.css">    
+* {
+  outline: px solid red;
+}
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap">
-    
-</head>
+/* Universal --------------------------------------------------------- */
 
-<body>
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Nav Bar --------------------------------------------------------- */
+
+#nav{
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+  line-height: 45px;
+  font-size: 22px;
+  font-family: arial;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 9999;
+}
+
+#home{
+   
+}
+
+#aboutlink{
+  float: right;
+  padding-right: 20px;
+}
+
+#about{
+  display: none;
+  width: 50vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 70px 30px;
+  border-left: 1px solid;
+  right: 0;
+  z-index: 9998;
+  background: white;
+}
+
+#bio{
+  width: 80%;
+}
+
+#contact{
+  float: right;
+  text-align: right;
+  color: blue;
+}
+
+#close{
+  position: fixed;
+  bottom: 30px;
+  color: red;
+  cursor: pointer;
+}
+
+/* Project Divs --------------------------------------------------------- */
+
+.project{
+  margin: 50px;
+  padding: 10px;
+  height: 500px;
+}
+
+.words{
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.words > p{
+  width: 50%;
+  margin-bottom: 14px;
+}
+
+.title{
   
-  <div id="nav">
-    <a id="home" href="#">Xavier Connelly</a>
-    <a id="aboutlink" onclick="openAbout();">?</a>
-  </div>
+}
 
-  <div id="about">
-    <div id="bio">
-      <p>
-        Xavier Connelly is a designer focused on creating supportive technology to enhance peoples lives. 
-      </p>
-      <br>
-      <p>
-        His practice is underpinned by thorough research to inform the decisions made, ensuring the right problems are being solved for.
-      </p>
-      <br>
-      <p>
-        Recently he has begun teaching himself front end code in an attempt to better understand the world of engineers. 
-      </p>
-      <br>
-      <p>
-        Before crossing over to the digital world he founded and ran the internationally renowned printing business Dawn Press for close to a decade.
-      </p>
-    </div>
-    <div id="contact">
-      <p>
-        hello@xavierconnelly.com
-      </p>
-      <br>
-      <p>
-        (+61) 408 556 937
-      </p>
-    </div>
-    <p id="close" onclick="closeAbout();">
-      Close
-    </p>
-  </div>
+.info{
+  float: right;
+  margin-left: 50%;
+  color: grey;
+}
 
-  <div class="project one">
-    <span class="words left">
-      <p class="title">Dawn Press</p>
-      <p class="info">Brand Identity, Print Design, Business Development</p>
-      <p class="info">Self Initiated</p>
-      <p class="desc">Founded in 2010, <a href="http://www.dawn-press.com/" target="_blank">Dawn Press </a> became one of the world’s first dedicated Risograph printers.</p>
-      <p>I ran all aspects of the business independently, from initial concept and market testing through to ongoing operations such as design, printing, client interviews and student workshops.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-    <span class="images duck">
-        <div><img src="/img/Dawn__01.png"></div>
-        <div><img src="/img/Dawn__02.png"></div>
-        <div><img src="/img/Dawn__03.png"></div>
-        <div><img src="/img/Dawn__04.png"></div>
-        <div><img src="/img/Dawn__05.png"></div>
-        <div><img src="/img/Dawn__06.png"></div>
-        <div><img src="/img/Dawn__07.png"></div>
-    </span>
-  </div>
-
-  <div class="project two">
-    <span class="images wolf">
-      <div><img src="/img/Free__01.png"></div>
-      <div><img src="/img/Free__02.png"></div>
-      <div><img src="/img/Free__03.png"></div>
-      <div><img src="/img/Free__04.png"></div>
-      <div><img src="/img/Free__05.png"></div>
-      <div><img src="/img/Free__06.png"></div>
-    </span>
-    <span class="words">
-      <p class="title">Free Association</p>
-      <p class="info">Brand Identity, Print Design, Business Development</p>
-      <p class="info">Client Brief</p>
-      <p class="desc"><a href="http://www.freeassociation.site/" target="_blank"> Free Association</a> is a newly established workshop and publishing platform working to create engaging creative writing within the arts.</p>
-      <p class="desc">I worked closely with designer, <a href="http://aa-m.co/" target="_blank">Alex Margetic</a>, driving forward design concepts to realise project goals.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-  </div>
-
-  <div class="project three">
-    <span class="words left">
-      <p class="title">James And Jimmy</p>
-      <p class="info">Web Design, Web Development, Brand Identity</p>
-      <p class="info">Client Brief</p>
-      <p class="desc"><a href="http://www.jamesandjimmy.com/" target="_blank">James Carter</a> is a budding architect working to establish himself in his new home town of Chicago, Illinois. </p>
-      <p class="desc">Through a thorough discovery phase James and I were able to arrive at a design which managed to both reflect his personality and compliment the theory underpinning his practice.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-    <span class="images sheep">
-        <div><img src="/img/James__01.png"></div>
-        <div><img src="/img/James__02.png"></div>
-        <div><img src="/img/James__03.png"></div>
-        <div><img src="/img/James__04.png"></div>
-        <div><img src="/img/James__05.png"></div>
-        <div><img src="/img/James__06.png"></div>
-    </span>
-  </div>
+.desc{
   
-  <div class="project four">
-    <span class="images left goose">
-      <div><img src="/img/Pada__01_Copy.png"></div>
-      <div><img src="/img/Pada__02.png"></div>
-      <div><img src="/img/Pada__03.png"></div>
-      <div><img src="/img/Pada__04.png"></div>
-      <div><img src="/img/Pada__05.png"></div>
-      <div><img src="/img/Pada__06.png"></div>
-      <div><img src="/img/Pada__07.png"></div>
-    </span>
-    <span class="words">
-      <p class="title">PADA Studios</p>
-      <p class="info">Service Design, Customer Research, Brand Identity</p>
-      <p class="info">Client Brief</p>
-      <p class="desc">Launching mid way through 2018, <a href="https://www.padastudios.com/" target="_blank">PADA Studios</a>is the latest addition to Lisbon’s emerging artist residency scene.</p>
-      <p class="desc">Through ongoing interviews with the initial intake of residents I developed a welcome package, catering to the specific needs and interests of artists in a foreign city.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-  </div>
+}
 
-  <div class="project five">
-    <span class="words left">
-      <p class="title">Apple iOS</p>
-      <p class="info">User Research, User Experience Design, User Interface Design</p>
-      <p class="info">GA UXDi Case Study</p>
-      <p class="desc">Our relationship with technology has begun to evolve with wearables, IoT devices and smart assistants all quickly becoming commonplace in our lives.</p>
-      <p class="desc">Focusing on Apple’s iOS system I identified the need for a redesign capable of responding to users changing demands.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-    <span class="images cow">
-      <div><img src="/img/Apple__01.png"></div>
-      <div><img src="/img/Apple__02.png"></div>
-      <div><img src="/img/Apple__03.png"></div>
-      <div><img src="/img/Apple__04.png"></div>
-      <div><img src="/img/Apple__05.png"></div>
-      <div><img src="/img/Apple__06.png"></div>
-    </span>
-  </div>
+.learn{
+  color: red;
+}
 
-  <div class="project six">
-    <span class="images turtle">
-      <div><img src="/img/Kiosk__01.png"></div>
-      <div><img src="/img/Kiosk__02.png"></div>
-      <div><img src="/img/Kiosk__03.png"></div>
-      <div><img src="/img/Kiosk__04.png"></div>
-      <div><img src="/img/Kiosk__05.png"></div>
-      <div><img src="/img/Kiosk__06.png"></div>
-    </span>
-    <span class="words">
-      <p class="title">Australian Supermarket Self Checkout Interface / Woolworths Australia</p>
-      <p class="info">User Research, User Experience Design, User Interface Design </p>
-      <p class="info">GA UXDi Case Study</p>
-      <p class="desc">Undertaken as part of <a href="https://generalassemb.ly/education/user-experience-design-immersive/melbourne" target="_blank"> General Assembly’s UXDi</a> course I worked individually in a week long sprint, redesigning the self checkout interface currently in use across Australian supermarkets.</p>
-      <p class="desc"> I leveraged the loyalty program in order to provide a more personalised, streamlined experience for returning customers.</p>
-      <a href="#" class="learn">Learn more</a>
-    </span>
-  </div>
+.learn:hover{
+  font-style: italic;
+}
+
+.images{
+  float: left;
+  width: calc(60% - 10px);
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.images > img{
+  min-width: 100%;
+  min-height: 500px;
+}
+
+.carousel > div{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.one{
+  margin-top: 90px;
+  color: ;
+}
+
+.two{
+  color:  ;
+}
+
+.three{
+  color:  ;
+}
+
+.four{
+  color:  ;
+}
+
+/* Slider Nav --------------------------------------------------------- */
 
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="/js/main.js"></script>
-  <script type="text/javascript" src="/js/slick.min.js"></script>
-
-</body>
-</html>
