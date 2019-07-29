@@ -59,7 +59,7 @@ $(document).ready(function(){
   speed: 300,
   fade: true,
   cssEase: 'linear',
-  autoplay: true,
+  autoplay: false,
   });
 });
 
