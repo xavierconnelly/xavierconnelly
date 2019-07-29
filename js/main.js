@@ -1,5 +1,10 @@
 // Carousel Options — Dawn
 $(document).ready(function(){
+});
+
+// Carousel Options — Free
+$(document).ready(function(){
+
   $('.duck').slick({
   dots:false,
   centerMode: true,
@@ -11,10 +16,7 @@ $(document).ready(function(){
   prevArrow: false,
   nextArrow: false,
   });
-});
-
-// Carousel Options — Free
-$(document).ready(function(){
+  
   $('.wolf').slick({
   dots:false,
   centerMode: true,
