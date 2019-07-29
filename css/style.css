@@ -1,121 +1,162 @@
-// Carousel Options — Dawn
-$(document).ready(function(){
-  $('.duck').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  });
-});
+/* To Delete --------------------------------------------------------- */
 
-// Carousel Options — Free
-$(document).ready(function(){
-  $('.wolf').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: false,
-  });
-});
+.project, .words, .images{
+  border: px solid blue;
+}
 
-// Carousel Options — Jimmy
-$(document).ready(function(){
-  $('.sheep').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true,
-  });
-});
+* {
+  outline: px solid red;
+}
 
-// Carousel Options — Pada
-$(document).ready(function(){
-  $('.goose').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: false,
-  });
-});
+/* Universal --------------------------------------------------------- */
 
-// Carousel Options — Apple
-$(document).ready(function(){
-  $('.cow').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: false,
-  });
-});
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-// Carousel Options — Kiosk
-$(document).ready(function(){
-  $('.turtle').slick({
-  dots:false,
-  centerMode: true,
-  infinite: true,
-  speed: 300,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: false,
-  });
-});
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Nav Bar --------------------------------------------------------- */
+
+#nav{
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+  line-height: 45px;
+  font-size: 22px;
+  font-family: arial;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 9999;
+}
+
+#home{
+   
+}
+
+#aboutlink{
+  float: right;
+  padding-right: 20px;
+}
+
+#about{
+  display: none;
+  width: 50vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 70px 30px;
+  border-left: 1px solid;
+  right: 0;
+  z-index: 9998;
+  background: white;
+}
+
+#close{
+  position: fixed;
+  bottom: 30px;
+  color: red;
+  cursor: pointer;
+}
+
+/* Project Divs --------------------------------------------------------- */
+
+.project{
+  margin: 50px;
+  padding: 10px;
+  height: 500px;
+}
+
+.words{
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 100%;
+  font-size: 14px;
+}
+
+.words > p{
+  width: 50%;
+  margin-bottom: 14px;
+}
+
+.title{
+  
+}
+
+.info{
+  float: right;
+  margin-left: 50%;
+  color: grey;
+}
+
+.desc{
+  
+}
+
+.learn{
+  color: red;
+}
+
+.learn:hover{
+  font-style: italic;
+}
+
+.images{
+  float: left;
+  width: calc(60% - 10px);
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.images > img{
+  min-width: 100%;
+  min-height: 500px;
+}
+
+.carousel > div{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.one{
+  margin-top: 90px;
+  color: ;
+}
+
+.two{
+  color:  ;
+}
+
+.three{
+  color:  ;
+}
+
+.four{
+  color:  ;
+}
+
+/* Slider Nav --------------------------------------------------------- */
 
 
-
-
-// Opening About
-function openAbout() {
-      document.getElementById("about").style.display = "block";
-    }
-
-// Closing About
-function closeAbout() {
-      document.getElementById("about").style.display = "none";
-    }
-
-
-// OLD JS
-
-// Learn More Button - Open
-function rabbit() {
-      var title = document.querySelector("#learn-more");
-      title.style.display = "block";
-      var joe = document.querySelector("#work-inner");
-      joe.style.width = "calc(50% - 52.5px)";
-    }
-
-// Learn More Button - Close
-function duck() {
-      var title = document.querySelector("#learn-more");
-      title.style.display = "none";
-      var joe = document.querySelector("#work-inner");
-      joe.style.width = "";
-    }
-
-// Project Nav - Open
-function goose() {
-      var something = document.querySelector("#project-container");
-      something.style.display = "flex";
-      var bingo = document.querySelector("#work-inner");
-      bingo.style.display = "none";
-     var trevor = document.querySelector("#learn-more");
-      trevor.style.display = "none";
-       var trevor = document.querySelector(".portal");
-      trevor.style.overflow = "hidden";
-    }
