@@ -8,6 +8,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: true,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
@@ -21,6 +23,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: false,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
@@ -34,6 +38,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: false,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
@@ -47,6 +53,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: false,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
@@ -60,6 +68,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: false,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
@@ -73,6 +83,8 @@ $(document).ready(function(){
   fade: true,
   cssEase: 'linear',
   autoplay: false,
+  prevArrow: false,
+  nextArrow: false
   });
 });
 
