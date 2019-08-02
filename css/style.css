@@ -126,14 +126,6 @@ video {
   
 }
 
-.learn {
-  color: red;
-}
-
-.learn:hover {
-  font-style: italic;
-}
-
 .images {
   float: left;
   width: calc(60% - 10px);
@@ -165,16 +157,33 @@ video {
   color: ;
 }
 
-.two {
-  color:  ;
+.dawn{
+  position: relative;
+  bottom: 0px;
+  height: calc(100% - 3em);
+  overflow-Y: auto;
+  overflow-X: hidden;
 }
 
-.three {
-  color:  ;
+/* Learn More Things */
+
+.learn{
+  cursor: pointer;
+  color: red;
 }
 
-.four {
-  color:  ;
+.learn:hover{
+  font-style: italic;
+}
+
+.extra{
+  display: none;
+  width: 90%;
+  padding: 30px 0;
+}
+
+.extra h4{
+  text-decoration: underline;
 }
 
 /* Slider Nav --------------------------------------------------------- */
