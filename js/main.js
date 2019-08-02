@@ -1,10 +1,16 @@
+// Opening About
+function openAbout() {
+      document.getElementById("about").style.display = "block";
+    }
+
+// Closing About
+function closeAbout() {
+      document.getElementById("about").style.display = "none";
+    }
+
+
+$(document).ready(function(){
 // Carousel Options — Dawn
-$(document).ready(function(){
-});
-
-// Carousel Options — Free
-$(document).ready(function(){
-
   $('.duck').slick({
   dots:false,
   centerMode: true,
@@ -17,6 +23,7 @@ $(document).ready(function(){
   nextArrow: false,
   });
   
+  // Carousel Options — Free
   $('.wolf').slick({
   dots:false,
   centerMode: true,
@@ -28,10 +35,8 @@ $(document).ready(function(){
   prevArrow: false,
   nextArrow: false,
   });
-});
 
 // Carousel Options — Jimmy
-$(document).ready(function(){
   $('.sheep').slick({
   dots:false,
   centerMode: true,
@@ -43,10 +48,8 @@ $(document).ready(function(){
   prevArrow: false,
   nextArrow: false,
   });
-});
 
 // Carousel Options — Pada
-$(document).ready(function(){
   $('.goose').slick({
   dots:false,
   centerMode: true,
@@ -58,10 +61,8 @@ $(document).ready(function(){
   prevArrow: false,
   nextArrow: false,
   });
-});
 
 // Carousel Options — Apple
-$(document).ready(function(){
   $('.cow').slick({
   dots:false,
   centerMode: true,
@@ -73,10 +74,8 @@ $(document).ready(function(){
   prevArrow: false,
   nextArrow: false,
   });
-});
 
 // Carousel Options — Kiosk
-$(document).ready(function(){
   $('.turtle').slick({
   dots:false,
   centerMode: true,
@@ -91,45 +90,27 @@ $(document).ready(function(){
 });
 
 
+function learnDawn() {
+  document.getElementById("extraDawn").style.display = "block";
+};
 
+function learnFree() {
+  document.getElementById("extraFree").style.display = "block";
+};
 
-// Opening About
-function openAbout() {
-      document.getElementById("about").style.display = "block";
-    }
+function learnJimmy() {
+  document.getElementById("extraJimmy").style.display = "block";
+};
 
-// Closing About
-function closeAbout() {
-      document.getElementById("about").style.display = "none";
-    }
+function learnPada() {
+  document.getElementById("extraPada").style.display = "block";
+};
 
+function learnApple() {
+  document.getElementById("extraApple").style.display = "block";
+};
 
-// OLD JS
+function learnKiosk() {
+  document.getElementById("extraKiosk").style.display = "block";
+};
 
-// Learn More Button - Open
-function rabbit() {
-      var title = document.querySelector("#learn-more");
-      title.style.display = "block";
-      var joe = document.querySelector("#work-inner");
-      joe.style.width = "calc(50% - 52.5px)";
-    }
-
-// Learn More Button - Close
-function duck() {
-      var title = document.querySelector("#learn-more");
-      title.style.display = "none";
-      var joe = document.querySelector("#work-inner");
-      joe.style.width = "";
-    }
-
-// Project Nav - Open
-function goose() {
-      var something = document.querySelector("#project-container");
-      something.style.display = "flex";
-      var bingo = document.querySelector("#work-inner");
-      bingo.style.display = "none";
-     var trevor = document.querySelector("#learn-more");
-      trevor.style.display = "none";
-       var trevor = document.querySelector(".portal");
-      trevor.style.overflow = "hidden";
-    }
