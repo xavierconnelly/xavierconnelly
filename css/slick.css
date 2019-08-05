@@ -1,178 +1,119 @@
-/* To Delete --------------------------------------------------------- */
+/* Slider */
+.slick-slider
+{
+    position: relative;
 
-.project, .words, .images{
-  border: px solid blue;
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
 
-* {
-  outline: px solid red;
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
 }
 
-/* Universal --------------------------------------------------------- */
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
 }
 
-body{
-  font-family: 'IBM Plex Mono', monospace;
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
 }
-
-video{
-  width: 100%;
+[dir='rtl'] .slick-slide
+{
+    float: right;
 }
-
-/* Nav Bar --------------------------------------------------------- */
-
-#nav{
-  height: 45px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid;
-  line-height: 45px;
-  font-size: 22px;
-  font-family: arial;
-  position: fixed;
-  top: 0;
-  background: white;
-  z-index: 9999;
+.slick-slide img
+{
+    display: block;
 }
-
-#home{
-   
+.slick-slide.slick-loading img
+{
+    display: none;
 }
-
-#aboutlink{
-  float: right;
-  padding-right: 20px;
+.slick-slide.dragging img
+{
+    pointer-events: none;
 }
-
-#about{
-  display: none;
-  width: 50vw;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  padding: 70px 30px;
-  border-left: 1px solid;
-  right: 0;
-  z-index: 9998;
-  background: white;
+.slick-initialized .slick-slide
+{
+    display: block;
 }
-
-#bio{
-  width: 80%;
+.slick-loading .slick-slide
+{
+    visibility: hidden;
 }
+.slick-vertical .slick-slide
+{
+    display: block;
 
-#contact{
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  text-align: right;
-  color: blue;
+    height: auto;
+
+    border: 1px solid transparent;
 }
-
-#close{
-  position: fixed;
-  bottom: 30px;
-  color: red;
-  cursor: pointer;
+.slick-arrow.slick-hidden {
+    display: none;
 }
-
-/* Project Divs --------------------------------------------------------- */
-
-.project{
-  margin: 50px;
-  padding: 10px;
-  height: 500px;
-}
-
-.words{
-  float: left;
-  width: 40%;
-  padding: 10px;
-  height: 100%;
-  font-size: 14px;
-}
-
-.words > p{
-  width: 50%;
-  margin-bottom: 14px;
-}
-
-.title{
-  
-}
-
-.info{
-  float: right;
-  margin-left: 50%;
-  color: grey;
-}
-
-.desc{
-  
-}
-
-.learn{
-  color: red;
-}
-
-.learn:hover{
-  font-style: italic;
-}
-
-.images{
-  float: left;
-  width: calc(60% - 10px);
-  padding: 0px;
-  height: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.images > img{
-  min-width: 100%;
-  min-height: 500px;
-}
-
-.carousel > div{
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.left {
-  margin-right: 10px;
-}
-
-.one{
-  margin-top: 90px;
-  color: ;
-}
-
-.two{
-  color:  ;
-}
-
-.three{
-  color:  ;
-}
-
-.four{
-  color:  ;
-}
-
-/* Slider Nav --------------------------------------------------------- */
-
-
