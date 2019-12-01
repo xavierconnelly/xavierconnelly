@@ -27,12 +27,12 @@ body {
   background: #bebaaf;
 }
 
-img, video {
+.images {
     filter: grayscale(1);
     mix-blend-mode: luminosity;
 }
 
-img:hover, video:hover {
+.images:hover {
     filter: grayscale(0);
     mix-blend-mode: none;
 }
