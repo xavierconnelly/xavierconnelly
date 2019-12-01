@@ -32,6 +32,11 @@ img, video {
     mix-blend-mode: luminosity;
 }
 
+img:hover, video:hover {
+    filter: grayscale(0);
+    mix-blend-mode: none;
+}
+
 video {
   width: 100%;
 }
@@ -48,12 +53,16 @@ video {
   font-family: arial;
   position: fixed;
   top: 0;
-  background: white;
+  background: #bebaaf;
   z-index: 9999;
 }
 
 #nav a {
   color: inherit;
+}
+
+#nav, #about {
+  background: #302d22;
 }
 
 #home {
@@ -72,10 +81,10 @@ video {
   position: fixed;
   top: 0;
   padding: 70px 30px;
-  border-left: 1px solid;
+  border-left: 1px solid black;
   right: 0;
   z-index: 9998;
-  background: white;
+  background: #bebaaf;
 }
 
 #bio {
@@ -87,7 +96,7 @@ video {
   right: 30px;
   bottom: 30px;
   text-align: right;
-  color: blue;
+  color: white;
 }
 
 #close {
