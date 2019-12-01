@@ -41,6 +41,18 @@ video {
   width: 100%;
 }
 
+/* Changes --------------------------------------------------------- */
+
+.slick-slide {
+  width: 370px;
+  height: 460px;
+  background: #bebaaf;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
 /* Nav Bar --------------------------------------------------------- */
 
 #nav {
@@ -151,10 +163,6 @@ video {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.slick-slide {
-  background: #bebaaf;
 }
   
 .images > img {
