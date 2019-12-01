@@ -30,6 +30,7 @@ body {
 .images {
     filter: grayscale(1);
     mix-blend-mode: luminosity;
+    transition: 1s;
 }
 
 .project:hover .images {
@@ -62,7 +63,7 @@ video {
   border-bottom: 1px solid;
   line-height: 45px;
   font-size: 22px;
-  font-family: arial;
+  /* font-family: arial; */
   position: fixed;
   top: 0;
   background: #bebaaf;
@@ -102,6 +103,7 @@ video {
 
 #bio {
   width: 80%;
+  color: white;
 }
 
 #contact {
