@@ -27,7 +27,7 @@ body {
   background: #bebaaf;
 }
 
-img, viedo {
+img, video {
     filter: grayscale(1);
     mix-blend-mode: luminosity;
 }
