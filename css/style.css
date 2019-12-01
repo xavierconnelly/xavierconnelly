@@ -84,7 +84,8 @@ video {
   border-left: 1px solid black;
   right: 0;
   z-index: 9998;
-  background: #bebaaf;
+  background: #302d22;
+  color: #bebaaf;
 }
 
 #bio {
