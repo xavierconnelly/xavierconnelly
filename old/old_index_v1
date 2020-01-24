@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Xavier Connelly</title>
+    
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="d1TEEvgs_BPRVWJH0I51xK2g-mTbjjCp4FfyS29Jkls" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Xavier Connelly is a designer focused on enhancing people's lives through technology and other means">
+    <meta name="keywords" content="xavier, connelly, melbourne, designer, ux, ui, service, design, graphic, web, developer, technology, hcd">
+    <meta name="author" content="Xavier Connelly">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/slick.css">    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap">
+    
+</head>
+
+<body>
+  
+  <div id="nav">
+    <a id="home" href="#">Xavier Connelly</a>
+    <a id="aboutlink" onclick="openAbout();">?</a>
+  </div>
+
+  <div id="about">
+    <div id="bio">
+      <p>
+        Xavier Connelly is a designer focused on creating supportive technology to enhance peoples lives. 
+      </p>
+      <br>
+      <p>
+        His practice is underpinned by thorough research to inform the decisions made, ensuring the right problems are being solved for.
+      </p>
+      <br>
+      <p>
+        Recently he has begun teaching himself front end code in an attempt to better understand the world of engineers. 
+      </p>
+      <br>
+      <p>
+        Before crossing over to the digital world he founded and ran the internationally renowned printing business Dawn Press for close to a decade.
+      </p>
+    </div>
+    <div id="contact">
+      <p>
+        hello@xavierconnelly.com
+      </p>
+      <p>
+        (+61) 408 556 937
+      </p>
+    </div>
+    <p id="close" onclick="closeAbout();">
+      Close
+    </p>
+  </div>
+
+  <div class="project one">
+    <span class="words">
+      <div class="title">
+        Dawn Press
+      </div>
+      <div class="dawn left">
+        <p class="info">Brand Identity, Print Design, Business Development</p>
+        <p class="info">Self Initiated</p>
+        <p class="desc">Founded in 2010, <a href="http://www.dawn-press.com/" target="_blank">Dawn Press </a> became one of the world’s first dedicated Risograph printers.</p>
+        <p>I ran all aspects of the business independently, from initial concept and market testing through to ongoing operations such as design, printing, client interviews and student workshops.</p>
+        <a href="#extraDawn" onclick="learnDawn()" class="learn">Learn more</a>
+        <div id="extraDawn" class="extra">
+          <p>
+            The discovery phase highlighted the fruit and veg search was causing customers the greatest frustration. There are only around 100+ possible fruit or vegetables. Most people might only ever get say 20 - 30. By populating the search based off of a ‘previously bought’ list it is possible to significantly reduce the clutter. 
+          </p>
+          <br>
+          <p>
+            Initial feedback for the design was extremely positive. However, at the end the project it was apparent further testing would be required to understand how customer attitudes towards loyalty programs would impact efficacy.
+          </p>
+          <br>
+          <p>
+            Initial feedback for the design was extremely positive. However, at the end the project it was apparent further testing would be required to understand how customer attitudes towards loyalty programs would impact efficacy.
+          </p>
+          <br>
+          <hr>
+          <br>
+          <h4>Duration</h4>
+          <p>9 years</p>
+          <br>
+          <h4>Sector</h4>
+          <p>Print Industry</p>
+          <br>
+          <h4>Collaborators</h4>
+          <p>TCYK</p>
+          <p>Rob Cordiner</p>
+          <p>WestSpace</p>
+          <p>Hotel Hotel</p>
+          <br>
+          <h4>Selected Press</h4>
+          <p>
+            <a href="https://www.broadsheet.com.au/melbourne/art-and-design/studio-visit-dawn-press">Broadsheet: Studio Visit with...</a>
+          </p>
+          <p>
+            <a href="https://www.vice.com/en_au/article/ae4z94/art-scout-xavier-connelly-dawn-press">Vice Art Scout article</a>
+          </p>
+          <p>
+            <a href="https://www.hotel-hotel.com.au/stories/the-riso-dude/">Hotel Hotel: The Riso Dude</a>
+          </p>
+          <p>
+            <a href="https://desktopmag.com.au/features/the-rise-of-the-riso/">Desktop Magazine: Rise Of The Riso</a>
+          </p>
+        </div>
+      </div>
+    </span>
+    <span class="images duck" style="background-image: url(/img/Dawn__01.png)">
+    </span>
+  </div>
+
+
+  <div class="project">
+    <span class="images left wolf" style="background-image: url(/img/Free__01.png)">
+    </span>
+    <span class="words">
+      <div class="title">
+        Free Association
+      </div>
+      <div>
+        <p class="info">Brand Identity, Print Design, Business Development</p>
+        <p class="info">Client Brief</p>
+        <p class="desc"><a href="http://www.freeassociation.site/" target="_blank"> Free Association</a> is a newly established workshop and publishing platform working to create engaging creative writing within the arts.</p>
+        <p class="desc">I worked closely with designer, <a href="http://aa-m.co/" target="_blank">Alex Margetic</a>, driving forward design concepts to realise project goals.</p>
+        <a href="#" class="learn">Learn more</a>
+      </div>
+    </span>
+  </div>
+
+
+  <div class="project three">
+    <span class="words left">
+      <p class="title">James And Jimmy</p>
+      <p class="info">Web Design, Web Development, Brand Identity</p>
+      <p class="info">Client Brief</p>
+      <p class="desc"><a href="http://www.jamesandjimmy.com/" target="_blank">James Carter</a> is a budding architect working to establish himself in his new home town of Chicago, Illinois. </p>
+      <p class="desc">Through a thorough discovery phase James and I were able to arrive at a design which managed to both reflect his personality and compliment the theory underpinning his practice.</p>
+      <a href="#" class="learn">Learn more</a>
+    </span>
+    <span class="images sheep">
+        <div>
+            <video autoplay muted loop="myVideo">
+                <source src="url(/img/James__animation_small.mp4)">
+                Your browser does not support HTML5 video
+            </video>
+        </div>           
+    </span>
+  </div>
+  
+  <div class="project four">
+    <span class="images left goose" style="background-image: url(/img/Pada__01__Copy.png)">
+    </span>
+    <span class="words">
+      <p class="title">PADA Studios</p>
+      <p class="info">Service Design, Customer Research, Brand Identity</p>
+      <p class="info">Client Brief</p>
+      <p class="desc">Launching mid way through 2018, <a href="https://www.padastudios.com/" target="_blank">PADA Studios</a> is the latest addition to Lisbon’s emerging artist residency scene.</p>
+      <p class="desc">Through ongoing interviews with the initial intake of residents I developed a welcome package, catering to the specific needs and interests of artists in a foreign city.</p>
+      <a href="#" class="learn">Learn more</a>
+    </span>
+  </div>
+
+  <div class="project five">
+    <span class="words left">
+      <p class="title">Apple iOS</p>
+      <p class="info">User Research, User Experience Design, User Interface Design</p>
+      <p class="info">GA UXDi Case Study</p>
+      <p class="desc">Our relationship with technology has begun to evolve with wearables, IoT devices and smart assistants all quickly becoming commonplace in our lives.</p>
+      <p class="desc">Focusing on Apple’s iOS system I identified the need for a redesign capable of responding to users changing demands.</p>
+      <a href="#" class="learn">Learn more</a>
+    </span>
+    <span class="images cow" style="background-image: url(/img/Apple__01.png)">
+    </span>
+  </div>
+
+  <div class="project six">
+    <span class="images turtle" style="background-image: url(/img/Kiosk__01.png)">
+    </span>
+    <span class="words">
+      <p class="title">Australian Supermarket Self Checkout Interface / Woolworths Australia</p>
+      <p class="info">User Research, User Experience Design, User Interface Design </p>
+      <p class="info">GA UXDi Case Study</p>
+      <p class="desc">Undertaken as part of <a href="https://generalassemb.ly/education/user-experience-design-immersive/melbourne" target="_blank"> General Assembly’s UXDi</a> course I worked individually in a week long sprint, redesigning the self checkout interface currently in use across Australian supermarkets.</p>
+      <p class="desc"> I leveraged the loyalty program in order to provide a more personalised, streamlined experience for returning customers.</p>
+      <a href="#" class="learn">Learn more</a>
+    </span>
+  </div>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+
+</body>
+</html>
