@@ -28,6 +28,7 @@ body {
   display: block;
   background: ;
   grid-column: 1 / 1;
+  font-family: arial;
   font-size: 18px;
   line-height: 1.3em;
   height: 100vh;
