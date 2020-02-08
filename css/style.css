@@ -55,6 +55,11 @@ body {
   font-size: 40px;
 }
 
+#view:hover {
+  cursor: pointer;
+  color: red;
+}
+
 #projects {
   display: none;
 }
