@@ -52,6 +52,13 @@ body {
   background: ;
 }
 
+#view {
+}
+
+#projects {
+  display: none;
+}
+
 .text {
   width: 100%;
   text-align: left;
