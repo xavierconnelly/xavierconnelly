@@ -27,8 +27,8 @@ body {
 #left {
   display: block;
   background: ;
+  font-family: 'IBM Plex Sans', sans-serif;
   grid-column: 1 / 1;
-  font-family: arial;
   font-size: 18px;
   line-height: 1.3em;
   height: 100vh;
@@ -40,7 +40,6 @@ body {
 #left p {
   margin-left: ;
   padding-bottom: 1em;
-  font-family: 'IBM Plex Sans', sans-serif;
   width: 50%;
 }
 
@@ -48,11 +47,12 @@ body {
   grid-column: 2 / 2;
   height: 100vh;
   overflow-Y: scroll;
-  font-family: 'EB Garamond', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   background: ;
 }
 
 #view {
+  font-size: 40px;
 }
 
 #projects {
@@ -65,18 +65,6 @@ body {
   font-size: 40px;
   line-height: 1.2em;
   padding-bottom: 1em;
-}
-
-.light {
-  font-weight: 300;
-  color: ;
-  font-family: 'Heebo', sans-serif;
-}
-
-.heavy {
-  font-weight: 300;
-  color: ;
-  font-family: 'Heebo', sans-serif;
 }
 
 .title {
