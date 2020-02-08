@@ -40,6 +40,7 @@ body {
 #left p {
   margin-left: ;
   padding-bottom: 1em;
+  font-family: 'IBM Plex Sans', sans-serif;
   width: 50%;
 }
 
