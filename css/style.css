@@ -12,6 +12,13 @@ body {
   color: #282828;
 }
 
+video {
+   width: 400px;
+   margin: 0 auto;
+   display: flex;
+   height: 100%;
+}
+
 .container {
   display: grid;
   grid-template-columns: 50vw 50vw;
