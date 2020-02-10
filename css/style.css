@@ -13,10 +13,17 @@ body {
 }
 
 video {
-   width: 400px;
    margin: 0 auto;
    display: flex;
    height: 100%;
+}
+
+.portrait video {
+   width: 350px;
+}
+
+.landscape video {
+  width: 500px;
 }
 
 .container {
