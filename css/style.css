@@ -123,6 +123,11 @@ svg {
   padding-bottom: 1em;
 }
 
+.more {
+  font-size: 16px;
+  line-height: initial;
+}
+
 .title {
   font-family: 'Archivo Black', sans-serif;
 }
