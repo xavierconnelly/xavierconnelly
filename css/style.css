@@ -127,6 +127,16 @@ svg {
   opacity: 1;
 }
 
+.text-left > img {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.roles {
+  font-size: 20px;
+}
+
 .expand {
   cursor: pointer;
   color: red;
@@ -173,7 +183,7 @@ svg {
   overflow: hidden;
 }
 
-.text-left > img, .wri-img-big > img {
+.wri-img-big > img {
   width: 400px;
   margin: 0 auto;
   display: flex;
