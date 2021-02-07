@@ -118,6 +118,8 @@ svg {
   font-size: 40px;
   line-height: 1.2em;
   padding-bottom: 1em;
+}
+ /*  
   filter: grayscale(100%);
 }
 
@@ -125,6 +127,7 @@ svg {
   filter: grayscale(0%);
   transition: 1s;
 }
+*/
 
 .text:hover .text-left{
   opacity: 1;
