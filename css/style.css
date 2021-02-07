@@ -68,6 +68,7 @@ video {
 
 #left:hover, #right:hover {
   background: white;
+  transition: 0.5s;
 }
 
 svg {
