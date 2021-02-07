@@ -256,3 +256,15 @@ svg {
     height: 80%;
     width: 80%;
 }
+
+@media screen and (max-width: 900px) {
+   #container {
+      display: block;
+   }
+   #left {
+      border-right: unset;
+   }
+   #right {
+    display: none;
+  }
+}
