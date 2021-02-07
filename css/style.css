@@ -127,6 +127,12 @@ svg {
   opacity: 1;
 }
 
+.text-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-left > img {
   width: 400px;
   margin: 0 auto;
@@ -135,6 +141,7 @@ svg {
 
 .roles {
   font-size: 20px;
+  text-align: center;
 }
 
 .expand {
