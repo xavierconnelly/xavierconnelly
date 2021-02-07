@@ -240,7 +240,7 @@ svg {
     border: 1px solid;
 }
 
-.title:hover .wri-img-big {
+.title:hover .wri-img-big,
 .wri-img-small:hover .wri-img-big {
     opacity: 1;
 }
