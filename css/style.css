@@ -173,7 +173,7 @@ svg {
   overflow: hidden;
 }
 
-.text-left, .wri-img-big > img {
+.text-left > img, .wri-img-big > img {
   width: 400px;
   margin: 0 auto;
   display: flex;
@@ -195,7 +195,7 @@ svg {
   border-right: 2px solid black;
 }
 
-.text-left, .wri-img-big-container{
+.wri-img-big-container{
   width: 70%;
   position: relative;
   top: 50%; 
