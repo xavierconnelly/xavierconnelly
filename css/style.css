@@ -11,9 +11,8 @@
 
 a {
    text-decoration: none;
-   color: #E91E63;
+   color: red;
 }
-   
 
 body {
    color: #3c3b3b;
@@ -159,7 +158,7 @@ svg {
 
 .expand {
   cursor: pointer;
-  color: #E91E63;
+  color: #3f51b5;
 }
 
 .more {
@@ -171,6 +170,7 @@ svg {
 
 .title {
   font-family: 'Archivo Black', sans-serif;
+  color: red;
 }
 
 .wri-img-small {
@@ -240,6 +240,7 @@ svg {
     border: 1px solid;
 }
 
+.title:hover .wri-img-big {
 .wri-img-small:hover .wri-img-big {
     opacity: 1;
 }
