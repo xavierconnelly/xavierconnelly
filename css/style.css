@@ -262,7 +262,7 @@ svg {
 }
 
 @media screen and (max-width: 900px) {
-   #container {
+   .container {
       display: block;
    }
    #left {
