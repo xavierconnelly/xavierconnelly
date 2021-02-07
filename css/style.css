@@ -121,7 +121,7 @@ svg {
   filter: grayscale(100%);
 }
 
-.text:hover .text-left{
+.text:hover {
   filter: grayscale(0%);
   transition: 1s;
 }
