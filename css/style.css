@@ -14,6 +14,10 @@ a {
    color: red;
 }
 
+a:hover, .expand:hover {
+   text-decoration: unset;
+}
+
 body {
    color: #3c3b3b;
    background: #fef9f5;
