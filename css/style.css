@@ -6,8 +6,13 @@
 }
 
 ::-webkit-scrollbar {
-   display: none;
+   display: ;
 }
+
+a {
+   text-decoration: none;
+}
+   
 
 body {
    color: #3c3b3b;
@@ -153,7 +158,7 @@ svg {
 
 .expand {
   cursor: pointer;
-  color: red;
+  color: #E91E63;
 }
 
 .more {
