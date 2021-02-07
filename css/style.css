@@ -123,9 +123,15 @@ svg {
   padding-bottom: 1em;
 }
 
+.text:hover .text-left{
+  opacity: 1;
+}
+
 .more {
   font-size: 16px;
   line-height: initial;
+  display: none;
+  padding-top: 1em;
 }
 
 .title {
@@ -162,14 +168,14 @@ svg {
   overflow: hidden;
 }
 
-.wri-img-big > img {
+.text-left, .wri-img-big > img {
   width: 400px;
   margin: 0 auto;
   display: flex;
   height: 100%;
 }
 
-.wri-img-big {
+.text-left, .wri-img-big {
   pointer-events: none;
   position: fixed;
   top: calc(50%);
@@ -177,13 +183,14 @@ svg {
   transform: translate(-50%, -50%);
   width: 50vw;
   height: calc(100%); 
-  background-color: white;
+  color: #3c3b3b;
+  background: #fef9f5;
   transition: 1s ease;
   opacity: 0;
   border-right: 2px solid black;
 }
 
-.wri-img-big-container{
+.text-left, .wri-img-big-container{
   width: 70%;
   position: relative;
   top: 50%; 
