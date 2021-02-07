@@ -74,11 +74,8 @@ svg {
     width: 400px;
 }
 
-text {
-    font-size: 38px;
-}
-
 #clickme {
+    font-size: 35px;
     width: 400px;
     animation-name: spin;
     animation-duration: 5s;
