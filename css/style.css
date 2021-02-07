@@ -66,6 +66,10 @@ video {
   background: #ddae20;
 }
 
+#right:hover {
+  background: white;
+}
+
 svg {
     width: 400px;
 }
