@@ -1,74 +1,71 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
-  outline: px solid red;
+   margin: 0;
+   box-sizing: border-box;
+   outline: px solid red;
+   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+   display: none;
 }
 
 body {
-  color: #3c3b3b;
-  background: #fef9f5;
+   color: #3c3b3b;
+   background: #fef9f5;
 }
 
 video {
-   margin: 0 auto;
-   display: flex;
-   height: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
 }
 
 .portrait video {
-   width: 350px;
+    width: 350px;
 }
 
 .landscape video {
-  width: 500px;
+    width: 500px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
 }
 
 .container > div{
-  outline: px solid black;
-  overflow: hidden;
-  padding: 20px;
+    outline: px solid black;
+    overflow: hidden;
+    padding: 20px;
 }
 
 #left {
-  display: block;
-  background: ;
-  font-family: 'IBM Plex Sans', sans-serif;
-  grid-column: 1 / 1;
-  font-size: 18px;
-  line-height: 1.3em;
-  height: 100vh;
-  overflow-Y: scroll;
-  background: ;
-  border-right: 2px solid black;
+    display: block;
+    grid-column: 1 / 1;
+    font-size: 18px;
+    line-height: 1.3em;
+    height: 100vh;
+    overflow-Y: scroll;
+    border-right: 2px solid black;
 }
 
 #left p {
-  margin-left: ;
-  padding-bottom: 1em;
-  width: 50%;
+    margin-left: ;
+    padding-bottom: 1em;
+    width: 50%;
 }
 
 #right {
-  grid-column: 2 / 2;
-  height: 100vh;
-  overflow-Y: scroll;
-  font-family: 'IBM Plex Sans', sans-serif;
-  background: #ddae20;
+    grid-column: 2 / 2;
+    height: 100vh;
+    overflow-Y: scroll;
+    background: #ddae20;
 }
 
 #left:hover, #right:hover {
-  background: white;
-  transition: 0.5s;
+    background: white;
+    transition: 0.5s;
 }
 
 svg {
@@ -161,100 +158,85 @@ svg {
   font-family: 'Archivo Black', sans-serif;
 }
 
-.dawn {
-  background: ;
-}
-
-.fa {
-  background: ;
-}
-
-.jimmy {
-  background: ;
-  color: ;
-}
-
-.apple {
-  background: ;
-}
-
-
 .wri-img-small {
-  height: 1em;
-  color: red;
-  overflow: hidden;
-  display: inline-block;
+    height: 1em;
+    color: red;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .wri-img-small img {
-  height: 100%;
-  overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
 .wri-img-big > img {
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-  height: 100%;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
 }
 
 .text-left, .wri-img-big {
-  pointer-events: none;
-  position: fixed;
-  top: calc(50%);
-  left: 25vw;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  height: calc(100%); 
-  color: #3c3b3b;
-  background: #fef9f5;
-  transition: 1s ease;
-  opacity: 0;
-  border-right: 2px solid black;
+    pointer-events: none;
+    position: fixed;
+    top: calc(50%);
+    left: 25vw;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: calc(100%); 
+    color: #3c3b3b;
+    background: #fef9f5;
+    transition: 1s ease;
+    opacity: 0;
+    border-right: 2px solid black;
 }
 
-.wri-img-big-container{
-  width: 70%;
-  position: relative;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.wri-img-big-container > img{
-  width: 100%;
-  border: 5px solid red;
-  display: inline-block;
-}
-
-#wri-img-big-text{
-  padding: 5px;
-  font-size: 14px;
-  line-height: 1em;
-  font-style: ;
-  width: 15%;
-  color: black;
-  background: white;
-  position: absolute;
-  top: 2em;
-  left: 2em;
-  display: inline-block;
-  text-align: left;
-  border: 1px solid;
-}
-
-.wri-img-small:hover .wri-img-big{
-  opacity: 1;
-}
-
-
-.middle{
-    background-size: cover;
+.wri-img-big-container {
+    width: 70%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
     position: relative;
     opacity: 1;
+}
+
+.wri-img-big-container > img {
+    width: 100%;
+    border: 5px solid red;
+    display: inline-block;
+}
+
+#wri-img-big-text {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1em;
+    font-style: ;
+    width: 15%;
+    color: black;
+    background: white;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid;
+}
+
+.wri-img-small:hover .wri-img-big {
+    opacity: 1;
+}
+
+.cover {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    background-size: contain;
+    height: 80%;
+    width: 80%;
 }
