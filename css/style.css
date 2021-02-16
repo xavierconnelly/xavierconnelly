@@ -15,7 +15,8 @@ a {
 }
 
 a:hover, .expand:hover {
-   text-decoration: unset;
+   text-decoration: underline;
+   color: blue;
 }
 
 body {
