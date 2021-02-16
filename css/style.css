@@ -19,6 +19,10 @@ a:hover, .expand:hover {
    color: blue;
 }
 
+sup, sup:hover {
+   text-decoration: none;
+}
+
 body {
    color: #3c3b3b;
    background: #fef9f5;
