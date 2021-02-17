@@ -83,8 +83,8 @@ video {
 }
 
 #right:hover .text:not(.text:hover) {
-   opacity: 0.5;
-   transition: 1s;
+   opacity: 0.25;
+   transition: 2s;
 }
 
 svg {
