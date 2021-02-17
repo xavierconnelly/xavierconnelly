@@ -177,6 +177,10 @@ svg {
   padding-top: 1em;
 }
 
+.more span img {
+   height: 50px;
+}
+
 .title {
   font-family: 'Archivo Black', sans-serif;
   color: red;
