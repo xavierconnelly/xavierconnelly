@@ -82,6 +82,10 @@ video {
     transition: 0.5s;
 }
 
+#right:hover .text:not(.text:hover) {
+   opacity: 0.7;
+}
+
 svg {
     width: 400px;
 }
