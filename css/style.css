@@ -181,6 +181,10 @@ svg {
    height: 50px;
 }
 
+.more span {
+   width: 50%;
+}
+
 .title {
   font-family: 'Archivo Black', sans-serif;
   color: red;
