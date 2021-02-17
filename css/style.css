@@ -84,6 +84,9 @@ video {
 
 #right:hover .text:not(.text:hover) {
    opacity: 0.25;
+}
+
+.text, .text:not(.text:hover) {
    transition: 2s;
 }
 
