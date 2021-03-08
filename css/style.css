@@ -1,8 +1,14 @@
+@font-face {
+    font-family: "Ionic";
+    src: url("/css/ionic-mt-std.otf") format("opentype");
+}
+
 * {
    margin: 0;
    box-sizing: border-box;
    outline: px solid red;
-   font-family: 'IBM Plex Sans', sans-serif;
+   font-family: 'Ionic';
+   /*font-family: 'IBM Plex Sans', sans-serif;*/
 }
 
 #left::-webkit-scrollbar {
