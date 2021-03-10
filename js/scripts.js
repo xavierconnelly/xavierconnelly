@@ -1,4 +1,4 @@
 function openProjects() {
-    document.getElementById("view").style.display = "none";
+    document.getElementById("clickme-center").style.display = "none";
     document.getElementById("projects").style.display = "block";
 }
