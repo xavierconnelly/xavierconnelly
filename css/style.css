@@ -20,13 +20,9 @@ a {
    color: red;
 }
 
-a:hover, .expand:hover {
+a:hover {
    text-decoration: underline;
    color: blue;
-}
-
-sup, sup:hover {
-   text-decoration: none;
 }
 
 body {
@@ -56,6 +52,10 @@ section > {
    overflow-Y: scroll;
    background-image: url("/img/Left_triangle.png");
    background-size: 100% 100%;
+}
+
+#right:hover ~ #left {
+   background-image: none;
 }
 
 #info p {
@@ -187,6 +187,20 @@ article:hover {
    color: #ebebe0;
 }
 
+.title {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.pink .title
+.pink .jobs {
+	color: pink;
+}
+
+.red .title
+.red .jobs {
+	color: red;
+}
+
 .jobs {
   color: red;
   font-size: 0.5em;
@@ -225,11 +239,6 @@ article:hover .seemore:hover {
   transition: 1s;
 }
 */
-
-.title {
-  font-family: 'Archivo Black', sans-serif;
-  color: red;
-}
 
 #more {
   background: #ebebe0;
