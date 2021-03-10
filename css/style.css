@@ -35,6 +35,7 @@ body {
    display: grid;
    grid-template-columns: 50vw 50vw 0vw;
    grid-template-rows: auto;
+   overflow: hidden;
 }
 
 body, #right {
@@ -108,10 +109,6 @@ video {
     width: 500px;
 }
 
-svg {
-    width: 400px;
-}
-
 #clickme-center {
     width: 400px;
     height: 100%;
@@ -129,12 +126,19 @@ svg {
     top: 25%;
 }
 
-#clickme:hover {
+svg {
+    width: 400px;
+}
+
+#clickme-center:hover {
     cursor: pointer;
+}
+   
+#clickme-center:hover #clickme{
     fill: red;
     animation: pause;
 }
-    
+
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
@@ -150,23 +154,19 @@ svg {
 
 #titles {
   display: none;
-  width: 50vw;
-  height: 100vh;
+  width: 100%;
   padding: 10px;
   font-size: 35px;
-  background: #060b37;
   overflow-y: scroll;
 }
 
-article {
-  opacity: : 0;
-  transition: 1s;
+article:not(article .jobs) {
+   opacity: 0;
+   transition: 1s;
 }
 
-#titles,
-article:hover,
-article > .title {
-  color: #ebebe0;
+article:hover {
+	opacity: 1;
 }
 
 .jobs {
