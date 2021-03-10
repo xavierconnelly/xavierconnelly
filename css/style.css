@@ -117,6 +117,7 @@ video {
 }
 
 #clickme {
+	color: #ebebe0;
     font-size: 35px;
     width: 400px;
     animation-name: spin;
