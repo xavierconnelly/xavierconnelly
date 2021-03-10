@@ -161,8 +161,8 @@ svg {
   overflow-y: scroll;
 }
 
-article:not(article .jobs) {
-   opacity: 0;
+article {
+   color: 0;
    transition: 1s;
 }
 
@@ -208,48 +208,6 @@ article:hover .seemore:hover {
   transition: 1s;
 }
 */
-
-.text:hover .text-left{
-  opacity: 1;
-}
-
-.text-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-left > img {
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.roles {
-  font-size: 20px;
-  text-align: center;
-}
-
-.expand {
-  cursor: pointer;
-  color: #3f51b5;
-}
-
-.more {
-  font-size: 16px;
-  line-height: initial;
-  display: none;
-  padding-top: 1em;
-}
-
-.more span img {
-   height: 50px;
-}
-
-.more span {
-   width: 50%;
-}
 
 .title {
   font-family: 'Archivo Black', sans-serif;
