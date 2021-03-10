@@ -30,46 +30,56 @@ sup, sup:hover {
 }
 
 body {
-   color: #3c3b3b;
-   background: #fef9f5;
+   color: #ebebe0;
+   background: #060b37;
    display: grid;
    grid-template-columns: 50vw 50vw;
    grid-template-rows: auto;
 }
 
-body > container > {
+container > {
     overflow: hidden;
     padding: 20px;
 }
 
-video {
-    margin: 0 auto;
-    display: flex;
-    height: 100%;
-}
-
-.portrait video {
-    width: 350px;
-}
-
-.landscape video {
-    width: 500px;
+#right {
+  position: fixed;
+  left: 50vw;
+  top: 0;
+  height: 100vh;
+  width: 90vw;
+  transition: 1s;
 }
 
 #left {
-    display: block;
-    grid-column: 1 / 1;
-    font-size: 18px;
-    line-height: 1.3em;
-    height: 100vh;
-    overflow-Y: scroll;
-    border-right: 2px solid black;
+   display: block;
+   grid-column: 1 / 1;
+   font-size: 18px;
+   line-height: 1.3em;
+   height: 100vh;
+   overflow-Y: scroll;
+   background-image: url("https://xavierconnelly.com/img/Left_triangle.png");
+   background-size: 100% 100%;
 }
 
-#left p {
-    margin-left: ;
-    padding-bottom: 1em;
-    width: 50%;
+#info p {
+  width: 50%;
+}
+
+#info,
+#email {
+  padding: 10px;
+  height: 50vh;
+  width: 100%;
+}
+
+#email {
+  width: 50%;
+}
+
+#email p {
+  width: 250px;
+  mix-blend-mode: difference;
 }
 
 #right {
@@ -88,8 +98,18 @@ video {
    opacity: 0.2;
 }
 
-.text, .text:not(.text:hover) {
-   transition: 1.25s;
+video {
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.portrait video {
+    width: 350px;
+}
+
+.landscape video {
+    width: 500px;
 }
 
 svg {
@@ -143,6 +163,11 @@ svg {
   line-height: 1.2em;
   padding-bottom: 1em;
 }
+
+.text, .text:not(.text:hover) {
+   transition: 1.25s;
+}
+
  /*  
   filter: grayscale(100%);
 }
