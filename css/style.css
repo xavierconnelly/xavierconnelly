@@ -258,13 +258,9 @@ article:hover .seemore:hover {
 #more {
   background: #ebebe0;
   color: #060b37;
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 100vh;
-  width: 25vw;
+  width: 100%;
   padding: 10px;
-  display: ;
   overflow-y: scroll;
   transition: 1s;
 }
