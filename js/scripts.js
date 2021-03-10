@@ -4,5 +4,5 @@ function openProjects() {
 }
 
 function openFA() {
-    document.body("left").style.grid-template-columns = "25vw 50vw 25vw";
+    document.body("left").style.gridTemplateColumns = "25vw 50vw 25vw";
 }
