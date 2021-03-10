@@ -37,18 +37,13 @@ body {
    grid-template-rows: auto;
 }
 
+body, #right {
+  transition: 1s;
+}
+
 container > {
     overflow: hidden;
     padding: 20px;
-}
-
-#right {
-  position: fixed;
-  left: 50vw;
-  top: 0;
-  height: 100vh;
-  width: 90vw;
-  transition: 1s;
 }
 
 #left {
@@ -58,7 +53,7 @@ container > {
    line-height: 1.3em;
    height: 100vh;
    overflow-Y: scroll;
-   background-image: url("https://xavierconnelly.com/img/Left_triangle.png");
+   background-image: url("/img/Left_triangle.png");
    background-size: 100% 100%;
 }
 
@@ -86,7 +81,6 @@ container > {
     grid-column: 2 / 2;
     height: 100vh;
     overflow-Y: scroll;
-    background: ;
 }
 
 /*
