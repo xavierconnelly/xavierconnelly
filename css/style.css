@@ -86,7 +86,7 @@ container > {
     grid-column: 2 / 2;
     height: 100vh;
     overflow-Y: scroll;
-    background: #ddae20;
+    background: ;
 }
 
 /*
@@ -261,55 +261,51 @@ article:hover .seemore:hover {
   color: red;
 }
 
-.wri-img-small {
-    height: 1em;
-    color: red;
-    overflow: hidden;
-    display: inline-block;
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+  position: fixed;
+  top: calc(50%);
+  left: 25vw;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: calc(100%);
+  transition: 1s ease;
+  opacity: 0;
+  border-right: 2px solid black;
+
+  background: #060b37;
 }
 
-.wri-img-small img {
-    height: 100%;
-    overflow: hidden;
+.popup .bg {
+  mix-blend-mode: multiply;
+  filter: grayscale(1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
-.wri-img-big > img {
-    width: 400px;
-    margin: 0 auto;
-    display: flex;
-    height: 100%;
+article:hover .popup {
+  opacity: 1;
 }
 
-.text-left, .wri-img-big {
-    pointer-events: none;
-    position: fixed;
-    top: calc(50%);
-    left: 25vw;
-    transform: translate(-50%, -50%);
-    width: 50vw;
-    height: calc(100%); 
-    color: #3c3b3b;
-    background: #fef9f5;
-    transition: 1s ease;
-    opacity: 0;
-    border-right: 2px solid black;
+video {
+  width: 300px;
+  mix-blend-mode: screen;
+  filter: grayscale(1);
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
 }
 
-.wri-img-big-container {
-    width: 70%;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    opacity: 1;
-}
-
-.wri-img-big-container > img {
-    width: 100%;
-    border: 5px solid red;
-    display: inline-block;
+.popup > div {
+  z-index: 2;
 }
 
 #wri-img-big-text {
@@ -326,11 +322,6 @@ article:hover .seemore:hover {
     display: inline-block;
     text-align: left;
     border: 1px solid;
-}
-
-.title:hover .wri-img-big,
-.wri-img-small:hover .wri-img-big {
-    opacity: 1;
 }
 
 .cover {
