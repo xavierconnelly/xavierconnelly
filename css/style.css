@@ -216,6 +216,7 @@ article:hover .seemore:hover {
   padding: 10px;
   overflow-y: scroll;
   transition: 1s;
+  outline: 10px solid;
 }
 
 #more span {
@@ -259,7 +260,8 @@ article .popup {
   background: #ebebe0;
 }
 
-article:hover .popup {
+article:hover .popup,
+.goat:hover {
   opacity: 1;
 }
 
@@ -283,8 +285,7 @@ video {
     line-height: 1em;
     font-style: ;
     width: 15%;
-    color: black;
-    background: white;
+    color: inherit;
     position: absolute;
     top: 2em;
     left: 2em;
