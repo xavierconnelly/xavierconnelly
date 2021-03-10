@@ -33,7 +33,7 @@ body {
    color: #ebebe0;
    background: #060b37;
    display: grid;
-   grid-template-columns: 50vw 50vw;
+   grid-template-columns: 50vw 50vw 0vw;
    grid-template-rows: auto;
 }
 
@@ -261,6 +261,34 @@ article:hover .seemore:hover {
   color: red;
 }
 
+#more {
+  background: #ebebe0;
+  color: #060b37;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25vw;
+  padding: 10px;
+  display: ;
+  overflow-y: scroll;
+  transition: 1s;
+}
+
+#more span {
+  width: ;
+  display: ;
+  padding: 5px;
+}
+
+#more img {
+  width: 20vw;
+  display: flex;
+  margin: 0 auto;
+  mix-blend-mode: ;
+  filter: grayscale(1);
+}
+
 .popup {
   display: flex;
   flex-direction: column;
@@ -308,7 +336,8 @@ video {
   z-index: 2;
 }
 
-#wri-img-big-text {
+/* text under popup image
+#popup-desc {
     padding: 5px;
     font-size: 14px;
     line-height: 1em;
@@ -323,6 +352,7 @@ video {
     text-align: left;
     border: 1px solid;
 }
+*/
 
 .cover {
     background-size: cover;
