@@ -89,10 +89,12 @@ container > {
     background: #ddae20;
 }
 
+/*
 #left:hover, #right:hover {
     background: white;
     transition: 0.5s;
 }
+*/
 
 #right:hover .text:not(.text:hover) {
    opacity: 0.2;
@@ -152,9 +154,43 @@ svg {
     to {transform:rotate(360deg);}
 }
 
-#projects {
+#titles {
   display: none;
+  width: 50vw;
+  height: 100vh;
+  padding: 10px;
+  font-size: 35px;
+  background: #060b37;
+  overflow-y: scroll;
 }
+
+article {
+  opacity: : 0;
+  transition: 1s;
+}
+
+#titles,
+article:hover,
+article > .title {
+  color: #ebebe0;
+}
+
+.jobs {
+  color: red;
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+article:hover .seemore {
+  color: red;
+  cursor: pointer;
+}
+
+article:hover .seemore:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 .text {
   width: 100%;
