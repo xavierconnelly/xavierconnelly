@@ -162,12 +162,12 @@ svg {
 }
 
 article {
-   color: 0;
+   color: #060b37;
    transition: 1s;
 }
 
-article:hover {
-	opacity: 1;
+article:hover,
+   color: #ebebe0;
 }
 
 .jobs {
