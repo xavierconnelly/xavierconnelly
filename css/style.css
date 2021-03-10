@@ -32,6 +32,14 @@ sup, sup:hover {
 body {
    color: #3c3b3b;
    background: #fef9f5;
+   display: grid;
+   grid-template-columns: 50vw 50vw;
+   grid-template-rows: auto;
+}
+
+body > container > {
+    overflow: hidden;
+    padding: 20px;
 }
 
 video {
@@ -46,18 +54,6 @@ video {
 
 .landscape video {
     width: 500px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: auto;
-}
-
-.container > div{
-    outline: px solid black;
-    overflow: hidden;
-    padding: 20px;
 }
 
 #left {
