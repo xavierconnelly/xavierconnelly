@@ -38,7 +38,7 @@ body {
    overflow: hidden;
 }
 
-body, #right {
+body, section, #right {
   transition: 1s;
 }
 
@@ -103,14 +103,13 @@ video {
 }
 
 #clickme-center {
-    width: 400px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 #clickme {
-	color: #ebebe0;
     font-size: 35px;
     width: 400px;
     animation-name: spin;
@@ -122,6 +121,7 @@ video {
 
 svg {
     width: 400px;
+    fill: #ebebe0;
 }
 
 #clickme-center:hover {
@@ -274,12 +274,8 @@ video {
   height: 100%;
 }
 
-.popup > div {
-  z-index: 2;
-}
-
 /* text under popup image
-#popup-desc {
+figcaption {
     padding: 5px;
     font-size: 14px;
     line-height: 1em;
