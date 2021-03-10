@@ -88,10 +88,15 @@ section > {
    opacity: 0.2;
 }
 
+/*////////////////////////////// Pop Up
+*/
+
 video {
     margin: 0 auto;
     display: flex;
     height: 100%;
+  	mix-blend-mode: screen;
+  	filter: grayscale(1);
 }
 
 .portrait video {
@@ -102,8 +107,23 @@ video {
     width: 500px;
 }
 
-#clickme-center {
+.cover {
+    background-size: cover;
+    height: 100%;
     width: 100%;
+}
+
+.middle {
+    background-size: contain;
+    height: 80%;
+    width: 80%;
+}
+
+/*////////////////////////////// Click Me
+*/
+
+#clickme-center {
+    width: 400px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -145,6 +165,9 @@ svg {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+/*////////////////////////////// Titles
+*/
 
 #titles {
   display: none;
@@ -261,17 +284,8 @@ article .popup {
 }
 
 article:hover .popup,
-.goat:hover {
+.goat:hover .popup {
   opacity: 1;
-}
-
-video {
-  width: 300px;
-  mix-blend-mode: screen;
-  filter: grayscale(1);
-  margin: 0 auto;
-  display: flex;
-  height: 100%;
 }
 
 /* text under popup image
@@ -290,18 +304,6 @@ figcaption {
     border: 1px solid;
 }
 */
-
-.cover {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.middle {
-    background-size: contain;
-    height: 80%;
-    width: 80%;
-}
 
 @media screen and (max-width: 900px) {
    .section {
