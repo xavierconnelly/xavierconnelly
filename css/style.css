@@ -84,13 +84,6 @@ section > {
     overflow-Y: scroll;
 }
 
-/*
-#left:hover, #right:hover {
-    background: white;
-    transition: 0.5s;
-}
-*/
-
 #right:hover .text:not(.text:hover) {
    opacity: 0.2;
 }
@@ -164,6 +157,7 @@ svg {
 article {
    color: #060b37;
    transition: 1s;
+   display: inline;
 }
 
 article:hover {
@@ -243,29 +237,26 @@ article:hover .seemore:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   pointer-events: none;
   position: fixed;
   top: calc(50%);
-  left: 25vw;
   transform: translate(-50%, -50%);
-  width: 50vw;
   height: calc(100%);
   transition: 1s ease;
   opacity: 0;
   border-right: 2px solid black;
+}
 
+article .popup {
+  left: 25vw;
+  width: 50vw;
   background: #060b37;
 }
 
-.popup .bg {
-  mix-blend-mode: multiply;
-  filter: grayscale(1);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 1;
+.goat .popup {
+  left: 37.5vw;
+  width: 75vw;
+  background: #ebebe0;
 }
 
 article:hover .popup {
