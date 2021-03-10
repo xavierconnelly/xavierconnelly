@@ -166,7 +166,7 @@ article {
    transition: 1s;
 }
 
-article:hover,
+article:hover {
    color: #ebebe0;
 }
 
