@@ -41,7 +41,7 @@ body, #right {
   transition: 1s;
 }
 
-container > {
+section > {
     overflow: hidden;
     padding: 20px;
 }
@@ -361,7 +361,7 @@ video {
 }
 
 @media screen and (max-width: 900px) {
-   .container {
+   .section {
       display: block;
    }
    #left {
