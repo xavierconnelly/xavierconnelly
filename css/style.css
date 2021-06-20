@@ -285,6 +285,7 @@ article .popup {
   left: 25vw;
   width: 50vw;
   background: #060b37;
+ overflow: hidden;
 }
 
 .goat .popup {
