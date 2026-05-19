@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Ionic";
+    src: url("/css/ionic-mt-std.otf") format("opentype");
+}
+
+:root {
+    --light-100: #F6F3F0;
+    --light-40: #a29f9c;
+    --dark-100: #43423e;
+    --dark-40: #93938f;
+    --accent-100: #FF5000;
+  }
+
+* {
+    font-family: "EB Garamond", serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    background-color: var(--light-100);
+    color: var(--dark-100);
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
