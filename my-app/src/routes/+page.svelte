@@ -35,6 +35,11 @@
         padding: 20px;
         padding-right: 300px;
         max-width: 50vw;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    #bio p + p {
+        padding-top: 1em;
     }
 	img {
 		width: 100%;
