@@ -18,10 +18,10 @@
     <p>
         私の仕事は、クラフト（職人技）とシステム思考の両方を基盤としています。16年以上にわたりデザインに携わってきた中で、プロトタイプだけでなく現実の世界で機能し、人々の実際の行動を反映した体験をデザインすることに情熱を注いでいます。これまで、印刷物[1]、ウェブ[2]、サービス[3]、プロダクトデザイン[4]、[5]など幅広い分野で活動し、インクと紙からピクセルとシステムへと、自然な流れで移行してきました。 
     </p>
-    <nav>
+    <span>
         <a href="/">Projects</a>
         <a href="/">Articles</a>
-    </nav>
+    </span>
 </span>
 
 
@@ -32,7 +32,7 @@
         display: flex;
         flex-direction: row;
     }
-    nav {
+    /* nav {
         height: 100vh;
         width: 40px;
         padding: 20px 10px;
@@ -41,7 +41,7 @@
         top: 0;
         background: white;
         border-right: 1px solid black;
-    }
+    } */
     /* h1 {
         all: unset;
         font-size: 20px;
