@@ -3,7 +3,7 @@
 <!-- <nav>
     <h1>Xavier Connelly</h1>
 </nav> -->
-<span>
+<span class="wallpaper">
     <img src="/placeholder.png" alt="placeholder image">
 </span>
 <span id="bio">
@@ -49,15 +49,20 @@
     } */
     #bio {
         padding: 20px;
-        padding-right: 25vw;
+        padding-right: 5vw;
         max-width: 50vw;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 500;
     }
     #bio p + p {
         padding-top: 1em;
     }
+    .wallpaper {
+        padding: 10px;
+        height: 100vh;
+    }
 	img {
 		width: 100%;
+        height: 100%;
 	}
 </style>
