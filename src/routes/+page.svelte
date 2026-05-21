@@ -1,7 +1,9 @@
 
 <main>
-<span id="bio">
+<nav>
     <h1>Xavier Connelly</h1>
+</nav>
+<span id="bio">
     <p>
         My work draws on both craft and systems thinking. Having designed for over
         16 years, I love designing experiences that work in the real world — not
@@ -31,11 +33,26 @@
         display: flex;
         flex-direction: row;
     }
+    nav {
+        height: 100vh;
+        width: 40px;
+        padding: 20px 10px;
+        position: relative;
+        left: 0%;
+        top: 0;
+        background: white;
+        border-right: 1px solid black;
+    }
+    h1 {
+        all: unset;
+        font-size: 20px;
+        writing-mode: sideways-lr;
+    }
     #bio {
         padding: 20px;
-        padding-right: 300px;
+        padding-right: 25vw;
         max-width: 50vw;
-        font-size: 32px;
+        font-size: 20px;
         font-weight: 500;
     }
     #bio p + p {
