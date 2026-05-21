@@ -18,10 +18,10 @@
     <p>
         私の仕事は、クラフト（職人技）とシステム思考の両方を基盤としています。16年以上にわたりデザインに携わってきた中で、プロトタイプだけでなく現実の世界で機能し、人々の実際の行動を反映した体験をデザインすることに情熱を注いでいます。これまで、印刷物[1]、ウェブ[2]、サービス[3]、プロダクトデザイン[4]、[5]など幅広い分野で活動し、インクと紙からピクセルとシステムへと、自然な流れで移行してきました。 
     </p>
-    <span>
+    <div id="buttons">
         <a href="/">Projects</a>
         <a href="/">Articles</a>
-    </span>
+    </div>
 </span>
 
 
@@ -48,7 +48,7 @@
         writing-mode: sideways-lr;
     } */
     #bio {
-        padding: 20px;
+        padding: 10px;
         padding-right: 5vw;
         max-width: 25vw;
         font-size: 14px;
@@ -65,4 +65,7 @@
 		width: 100%;
         height: 100%;
 	}
+    #buttons {
+        font-size: 24px;
+    }
 </style>
