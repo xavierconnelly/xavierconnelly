@@ -50,7 +50,7 @@
     #bio {
         padding: 20px;
         padding-right: 5vw;
-        max-width: 50vw;
+        max-width: 25vw;
         font-size: 14px;
         font-weight: 500;
     }
