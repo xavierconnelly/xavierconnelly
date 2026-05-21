@@ -1,8 +1,11 @@
 
 <main>
-<nav>
+<!-- <nav>
     <h1>Xavier Connelly</h1>
-</nav>
+</nav> -->
+<span>
+    <img src="/placeholder.png" alt="placeholder image">
+</span>
 <span id="bio">
     <p>
         My work draws on both craft and systems thinking. Having designed for over
@@ -13,16 +16,12 @@
         systems.
     </p>
     <p>
-        Since 2022, I have worked within government [5] services tackling the
-        challenges of scale, accessibility, and user trust. While working on side
-        projects [6] and experimenting with developments in AI [7] Since 2022, I
-        have worked within government [5] services tackling the challenges of scale,
-        accessibility, and user trust. While working on side projects [6] and
-        experimenting with developments in AI [7]
+        私の仕事は、クラフト（職人技）とシステム思考の両方を基盤としています。16年以上にわたりデザインに携わってきた中で、プロトタイプだけでなく現実の世界で機能し、人々の実際の行動を反映した体験をデザインすることに情熱を注いでいます。これまで、印刷物[1]、ウェブ[2]、サービス[3]、プロダクトデザイン[4]、[5]など幅広い分野で活動し、インクと紙からピクセルとシステムへと、自然な流れで移行してきました。 
     </p>
-</span>
-<span>
-    <img src="/placeholder.png" alt="placeholder image">
+    <nav>
+        <a href="/">Projects</a>
+        <a href="/">Articles</a>
+    </nav>
 </span>
 
 
@@ -43,11 +42,11 @@
         background: white;
         border-right: 1px solid black;
     }
-    h1 {
+    /* h1 {
         all: unset;
         font-size: 20px;
         writing-mode: sideways-lr;
-    }
+    } */
     #bio {
         padding: 20px;
         padding-right: 25vw;
